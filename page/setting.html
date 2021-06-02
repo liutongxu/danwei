@@ -1,0 +1,57 @@
+<style>
+    .layui-form-item .layui-input-company {width: auto;padding-right: 10px;line-height: 38px;}
+</style>
+<div class="layuimini-container layuimini-page-anim">
+    <div class="layuimini-main">
+
+        <div class="layui-card">
+            <div class="layui-card-header"><i class="fa fa-video-camera icon"></i>   影片放映时间线</div>
+            <div class="layui-card-body layui-text layadmin-text">
+                <ul class="layui-timeline">
+                    <li class="layui-timeline-item">
+                      <i class="layui-icon layui-timeline-axis"></i>
+                      <div class="layui-timeline-content layui-text">
+                        <h3 class="layui-timeline-title">2021年6月6日18:00</h3>
+                        <ul>
+                            <img src="./movie/hkcs.webp" width="100" height="150">
+                          <li><a href="https://movie.douban.com/subject/1464526/" target="_blank">《横空出世》</a></li>
+                          <p>1949年新中国建立以来，虽然人民当家做主人，但是新政权还随时面临被海外敌对势力所颠覆的严峻现状。惨烈的抗美援朝战争结束后，曾经立下赫赫战功的冯石将军<em>（李雪健 饰）</em>接到中央委派的重要使命，那就是主持原子弹的研发工作。虽然对原子弹一窍不通，但是军人出身的冯石只有服从上级的命令，带着一支经过烈火淬炼的英雄部队挺近荒凉的戈壁滩。在此之后，以美国留学归来的陆光达<em>（李幼斌 饰）</em>等科学界的精英人才从四面八方调到了西北荒漠。
+                            白手起家，艰苦创业，在内无经验外断支援的艰苦条件下，一群怀着崇高理想的无名男儿朝着共同的目标奋勇前行……</p>
+                        </br>
+                            <img src="./movie/nhlhy.webp" width="100" height="150">
+                          <li><a href="https://movie.douban.com/subject/34841067/" target="_blank">《你好，李焕英》</a></li>
+                          <p>2001年的某一天，刚刚考上大学的贾晓玲<em>（贾玲 饰）</em>经历了人生中的一次大起大落。一心想要成为母亲骄傲的她却因母亲突遭严重意外，而悲痛万分。在贾晓玲情绪崩溃的状态下，竟意外的回到了1981年，并与年轻的母亲李焕英<em>（张小斐 饰）</em>相遇，二人形影不离，宛如闺蜜。与此同时，也结识了一群天真善良的好朋友。晓玲以为来到了这片“广阔天地”，她可以凭借自己超前的思维，让母亲“大有作为”，但结果却让晓玲感到意外......</p>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>  
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</div>
+<script>
+    layui.use(['form'], function () {
+        var form = layui.form
+            , layer = layui.layer;
+
+        /**
+         * 初始化表单，要加上，不然刷新部分组件可能会不加载
+         */
+        form.render();
+
+        //监听提交
+        form.on('submit(setting)', function (data) {
+            parent.layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            });
+            return false;
+        });
+
+    });
+</script>
