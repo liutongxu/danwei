@@ -59,7 +59,7 @@
 }
 
 .layui-layout-left {
-    left: 295px !important;
+    left: 210px !important;
 }
 
 .layui-nav.layui-layout-left.layuimini-header-menu.layuimini-pc-show {
@@ -99,7 +99,7 @@
 .layuimini-tool {
     position: absolute !important;
     top: 0;
-    left: 235px;
+    left: 165px;
     width: 60px;
     height: 100%;
     line-height: 60px;
@@ -396,7 +396,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #9c9da0;
+    background-color: #e0e0e0;
     -webkit-border-radius: 2em;
     -moz-border-radius: 2em;
     border-radius: 2em
