@@ -1,0 +1,87 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "xiaozu": "29小组",
+      "renci": 48,
+      "renjun": 13
+    },
+    {
+      "xiaozu": "30小组",
+      "renci": 26,
+      "renjun": 9
+    },
+    {
+      "xiaozu": "31小组",
+      "renci": 0,
+      "renjun": 0
+    },
+    {
+      "xiaozu": "32小组",
+      "renci": 14,
+      "renjun": 11
+    },
+    {
+      "xiaozu": "33小组",
+      "renci": 17,
+      "renjun": 11
+    },
+    {
+      "xiaozu": "34小组",
+      "renci": 13,
+      "renjun": 8
+    },
+    {
+      "xiaozu": "35小组",
+      "renci": 1,
+      "renjun": 3
+    },
+    {
+      "xiaozu": "36小组",
+      "renci": 26,
+      "renjun": 18
+    },
+    {
+      "xiaozu": "37小组",
+      "renci": 10,
+      "renjun": 4
+    },
+    {
+      "xiaozu": "38小组",
+      "renci": 9,
+      "renjun": 3
+    },
+    {
+      "xiaozu": "39小组",
+      "renci": 22,
+      "renjun": 6
+    },
+    {
+      "xiaozu": "40小组",
+      "renci": 43,
+      "renjun": 10
+    },
+    {
+      "xiaozu": "41小组",
+      "renci": 63,
+      "renjun": 13
+    },
+    {
+      "xiaozu": "42小组",
+      "renci": 54,
+      "renjun": 7
+    },
+    {
+      "xiaozu": "43小组",
+      "renci": 46,
+      "renjun": 9
+    },
+    {
+      "xiaozu": "44小组",
+      "renci": 43,
+      "renjun": 9
+    }
+  ]
+}

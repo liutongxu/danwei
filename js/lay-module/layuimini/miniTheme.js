@@ -430,7 +430,7 @@ layui.define(["jquery", "layer"], function (exports) {
                     '<ul>\n' + bgColorHtml + '</ul>\n' +
                     '</div>\n' +
                     '<div class="more-menu-list">\n' +
-                    '<a class="more-menu-item" href="javascript:;" target="_blank"><i class="layui-icon layui-icon-theme"></i> BY：刘桐序</a>\n' +
+                    '<a class="more-menu-item" href="https://hiltx.gitee.io/love/" target="_blank"><i class="fa fa-bell-o"></i>  BY：刘桐序</a>\n' +
                     '</div>' +
                     '</div>';
                 layer.open({

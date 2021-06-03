@@ -1,0 +1,104 @@
+{
+  "code": 0,
+  "msg": "",
+  "count": 1000,
+  "data": [
+    {
+      "shijian": "5.24-5.30",
+      "duiwu1": "38小组",
+      "duiwu2": "33-43小组",
+      "bifen1": 80,
+      "vs": "vs",
+      "bifen2": 56
+    },
+    {
+      "shijian": "5.31-6.06",
+      "duiwu1": "29-37小组",
+      "duiwu2": "34-44小组",
+      "bifen1": 89,
+      "vs": "vs",
+      "bifen2": 76
+    },
+    {
+      "shijian": "6.14-6.20",
+      "duiwu1": "30-41小组",
+      "duiwu2": "31-36小组",
+      "bifen1": 0,
+      "vs": "vs",
+      "bifen2": 0
+    },
+    {
+      "shijian": "6.21-6.27",
+      "duiwu1": "1小组",
+      "duiwu2": "32-42小组",
+      "bifen1": 0,
+      "vs": "vs",
+      "bifen2": 0
+    },
+    {
+      "shijian": "7.05-7.11",
+      "duiwu1": "33-43小组",
+      "duiwu2": "31-36小组",
+      "bifen1": 0,
+      "vs": "vs",
+      "bifen2": 0
+    },
+    {
+      "shijian": "7.12-7.18",
+      "duiwu1": "1小组",
+      "duiwu2": "29-37小组",
+      "bifen1": 0,
+      "vs": "vs",
+      "bifen2": 0
+    },
+    {
+      "shijian": "7.19-7.25",
+      "duiwu1": "30-41小组",
+      "duiwu2": "33-43小组",
+      "bifen1": 0,
+      "vs": "vs",
+      "bifen2": 0
+    },
+    {
+      "shijian": "7.26-8.01",
+      "duiwu1": "38小组",
+      "duiwu2": "31-36小组",
+      "bifen1": 0,
+      "vs": "vs",
+      "bifen2": 0
+    },
+    {
+      "shijian": "8.02-8.08",
+      "duiwu1": "32-42小组",
+      "duiwu2": "34-44小组",
+      "bifen1": 0,
+      "vs": "vs",
+      "bifen2": 0
+    },
+    {
+      "shijian": "8.09-8.15",
+      "duiwu1": "30-41小组",
+      "duiwu2": "38小组",
+      "bifen1": 0,
+      "vs": "vs",
+      "bifen2": 0
+    },
+    {
+      "shijian": "8.16-8.22",
+      "duiwu1": "29-37小组",
+      "duiwu2": "32-42小组",
+      "bifen1": 0,
+      "vs": "vs",
+      "bifen2": 0
+    },
+    {
+      "shijian": "8.23-8.30",
+      "duiwu1": "30-41小组",
+      "duiwu2": "34-44小组",
+      "bifen1": 0,
+      "vs": "vs",
+      "bifen2": 0
+    }
+
+  ]
+}

@@ -161,14 +161,10 @@
 
 
                     <div class="layuimini-notice">
-                        <div class="layuimini-notice-title">虎屯联赛第一场</div>
+                        <div class="layuimini-notice-title">第十届“拼搏杯”篮球赛</div>
                         <div class="layuimini-notice-extra">2021-06-03</div>
                         <div text-align="center" class="layuimini-notice-content layui-hide">
-                            <div align="center" style="margin-top:0;"><img src="images/20210603dianjing.jpg"
-                                    style="width: 250px;" /></div>
-
-                            报名截止2021-06-04 22:30<br>
-                            扫描可以报名和关注比赛<br>
+                            敬请期待<br>
                         </div>
                     </div>
 
@@ -179,12 +175,21 @@
             </div>
 
 
+
             <div class="layui-card">
-                <div class="layui-card-header"> <i class="fa fa-gamepad icon"></i> 王者荣耀联赛积分排行榜</div>
+                <div class="layui-card-header"> <i class="fa fa-dribbble icon"></i> 第十届“拼搏杯”篮球赛-赛程安排表</div>
                 <div class="layui-card-body layui-text">
-                    <table class="layui-hide" id="dianjing"></table>
+                    <table class="layui-hide" id="lanqiu"></table>
                 </div>
             </div>
+            <div class="layui-card">
+                <div class="layui-card-header"> <i class="fa fa-dribbble icon"></i> 第十届“拼搏杯”篮球赛-积分表</div>
+                <div class="layui-card-body layui-text">
+                    <table class="layui-hide" id="lanqiujf1"></table>
+                    <table class="layui-hide" id="lanqiujf2"></table>
+                </div>
+            </div>
+
 
 
         </div>
@@ -194,7 +199,7 @@
 
 <script>
 
-    layui.use(['form', 'table', 'miniPage', 'element','layer','echarts'], function () {
+    layui.use(['form', 'table', 'miniPage', 'element', 'layer', 'echarts'], function () {
         var $ = layui.jquery,
             form = layui.form,
             table = layui.table,
@@ -203,31 +208,81 @@
             echarts = layui.echarts;
 
         table.render({
-            elem: '#dianjing',
-            url: 'test/dianjing.json',
-            initSort: { field: 'jifen', type: 'desc' },
+            elem: '#lanqiu',
+            url: 'test/lanqiu.json',
+            initSort: { field: 'shijian', type: 'asc' },
             defaultToolbar: ['filter', 'exports', 'print', {
-                title: '王者荣耀联赛积分排行榜',
+                title: '第十届“拼搏杯”篮球赛',
                 layEvent: 'LAYTABLE_TIPS',
                 icon: 'layui-icon-tips'
             }],
-            cols: [[
-                { field: 'danwei', align:'center', width: '26%', title: '单位', sort: true },
-                { field: 'zhandui', align:'center', width: '51%', title: '战队名称', sort: true },
-                { field: 'jifen', align:'center', width: '25%', title: '积分', sort: true },
-                { field: 'duizhang', align:'center', width: '26%', title: '队长', sort: true },
-                { field: 'dianhua', align:'center', width: '40%', title: '电话', sort: true },
-                { field: 'weixin', align:'center', width: '50%', title: '微信', sort: true },
-            ]],
+            cols: [
+                [
+                    { field: 'shijian', align: 'center', width: '90', title: '时间', rowspan: "2" , sort: true},
+                    { field: 'duiwu1', align: 'center', width: '110',  title: '队伍', rowspan: "2" },
+                    { title: '比分', align: 'center', colspan: "3" },
+                    { field: 'duiwu2', align: 'center', width: '110',  title: '队伍', rowspan: "2" },
+                ],
+                [
+                    { field: 'bifen1', align: 'center', title: '分数' },
+                    { field: 'vs', align: 'center', title: 'VS' },
+                    { field: 'bifen2', align: 'center', title: '分数' },
+                ]
+            ],
 
+            
+            
 
         });
 
 
-                /**
-         * 查看公告信息
-         **/
-         $('body').on('click', '.layuimini-notice', function () {
+
+        table.render({
+            elem: '#lanqiujf1',
+            url: 'test/lanqiujf1.json',
+            defaultToolbar: ['filter', 'exports', 'print', {
+                title: '第十届“拼搏杯”篮球赛',
+                layEvent: 'LAYTABLE_TIPS',
+                icon: 'layui-icon-tips'
+            }],
+            cols: [
+                [
+                    { field: '1zu', align: 'center', width: '33.6%', title: '第1组' },
+                    { field: 'sheng', align: 'center', width: '33.6%', title: '胜' },
+                    { field: 'fu', align: 'center', width: '33.6%', title: '负' },
+                ],
+            ],
+
+            
+            
+
+        });
+
+        table.render({
+            elem: '#lanqiujf2',
+            url: 'test/lanqiujf2.json',
+            defaultToolbar: ['filter', 'exports', 'print', {
+                title: '第十届“拼搏杯”篮球赛',
+                layEvent: 'LAYTABLE_TIPS',
+                icon: 'layui-icon-tips'
+            }],
+            cols: [
+                [
+                    { field: '2zu', align: 'center', width: '33.6%', title: '第2组' },
+                    { field: 'sheng', align: 'center', width: '33.6%', title: '胜' },
+                    { field: 'fu', align: 'center', width: '33.6%', title: '负' },
+                ],
+            ],
+
+            
+            
+
+        });
+
+        /**
+ * 查看公告信息
+ **/
+        $('body').on('click', '.layuimini-notice', function () {
             var title = $(this).children('.layuimini-notice-title').text(),
                 noticeTime = $(this).children('.layuimini-notice-extra').text(),
                 content = $(this).children('.layuimini-notice-content').html();

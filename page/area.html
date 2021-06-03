@@ -1,7 +1,141 @@
+
+
+<style>
+    .layui-form-item .layui-input-company {width: auto;padding-right: 10px;line-height: 38px;}
+</style>
 <div class="layuimini-container layuimini-page-anim">
-    <div align="center" style="margin-top: 30%;"><img src="images/xcx.jpg" /></div> 
-    </br>
-    <div align="center">长按或截屏保存图片<br>使用微信扫一扫进入【学史习记】</div> 
+    <div class="layuimini-main">
+
+
+
+        <script src="lib/jquery-3.4.1/jquery-3.4.1.min.js" charset="utf-8"></script>
+        <script src="lib/jq-module/paigusu.min.js" charset="utf-8"></script>
+
+        <div class="layui-card">
+            <div class="layui-card-header"> <i class="fa fa-gamepad icon"></i> 5月学史习记签到一览表</div>
+            <div class="layui-card-body layui-text">
+        <table class="layui-hide" id="qiandao"></table>
+    </div>
 </div>
-<script src="lib/jquery-3.4.1/jquery-3.4.1.min.js" charset="utf-8"></script>
-<script src="lib/jq-module/paigusu.min.js" charset="utf-8"></script>
+
+<div class="layui-card">
+<div class="layuimini-container layuimini-page-anim">
+    <div align="center" style="margin-top:0;"><img src="images/xcx.jpg" /></div> 
+    </br>
+    <div align="center">长按选择 搜一搜 进入【学史习记】</div> 
+</div></div>
+
+        
+
+
+    </div>
+</div>
+<script>
+    layui.use(['form', 'table','miniPage','element','layer','echarts'], function () {
+        var $ = layui.jquery,
+            form = layui.form,
+            table = layui.table,
+            miniPage = layui.miniPage;
+
+        table.render({
+            elem: '#qiandao',
+            url: 'test/qiandao.json',
+            initSort: {field:'renjun', type:'desc'},
+            defaultToolbar: ['filter', 'exports', 'print', {
+                title: '5月学史习记签到一览表',
+                layEvent: 'LAYTABLE_TIPS',
+                icon: 'layui-icon-tips'
+            }],
+            cols: [[
+                {field: 'xiaozu', align:'center', width: '33.6%', title: '小组名称', sort: true},
+                {field: 'renci', align:'center', width: '33.6%', title: '签到人数', sort: true},
+                {field: 'renjun', align:'center', width: '33.6%', title: '人均签到', sort: true},
+            ]],
+            
+
+        });
+
+        // 监听搜索操作
+        form.on('submit(data-search-btn)', function (data) {
+            var result = JSON.stringify(data.field);
+            layer.alert(result, {
+                title: '最终的搜索信息'
+            });
+
+            //执行搜索重载
+            table.reload('currentTableId', {
+                page: {
+                    curr: 1
+                }
+                , where: {
+                    searchParams: result
+                }
+            }, 'data');
+
+            return false;
+        });
+
+        /**
+         * toolbar事件监听
+         */
+        table.on('toolbar(currentTableFilter)', function (obj) {
+            if (obj.event === 'add') {   // 监听添加操作
+                var content = miniPage.getHrefContent('page/table/add.html');
+                var openWH = miniPage.getOpenWidthHeight();
+
+                var index = layer.open({
+                    title: '添加用户',
+                    type: 1,
+                    shade: 0.2,
+                    maxmin:true,
+                    shadeClose: true,
+                    area: [openWH[0] + 'px', openWH[1] + 'px'],
+                    offset: [openWH[2] + 'px', openWH[3] + 'px'],
+                    content: content,
+                });
+                $(window).on("resize", function () {
+                    layer.full(index);
+                });
+            } else if (obj.event === 'delete') {  // 监听删除操作
+                var checkStatus = table.checkStatus('currentTableId')
+                    , data = checkStatus.data;
+                layer.alert(JSON.stringify(data));
+            }
+        });
+
+        //监听表格复选框选择
+        table.on('checkbox(currentTableFilter)', function (obj) {
+            console.log(obj)
+        });
+
+        table.on('tool(currentTableFilter)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'edit') {
+
+                var content = miniPage.getHrefContent('page/table/add.html');
+                var openWH = miniPage.getOpenWidthHeight();
+
+                var index = layer.open({
+                    title: '编辑用户',
+                    type: 1,
+                    shade: 0.2,
+                    maxmin:true,
+                    shadeClose: true,
+                    area: [openWH[0] + 'px', openWH[1] + 'px'],
+                    offset: [openWH[2] + 'px', openWH[3] + 'px'],
+                    content: content,
+                });
+                $(window).on("resize", function () {
+                    layer.full(index);
+                });
+                return false;
+            } else if (obj.event === 'delete') {
+                layer.confirm('真的删除行么', function (index) {
+                    obj.del();
+                    layer.close(index);
+                });
+            }
+        });
+
+    });
+</script>

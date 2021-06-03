@@ -1,6 +1,6 @@
 {
   "homeInfo": {
-    "title": "首页",
+    "title": "93173事务公开栏",
     "href": "page/welcome-1.html"
   },
   "logoInfo": {
@@ -10,17 +10,11 @@
   },
   "menuInfo": [
     {
-      "title": "93173事务公开栏",
+      "title": "首页",
       "icon": "fa fa-address-book",
-      "href": "",
+      "href": "page/welcome-1.html",
       "target": "_self",
       "child": [
-        {
-          "title": "主页",
-          "href": "page/welcome-1.html",
-          "icon": "fa fa-home",
-          "target": "_self"
-        },
         {
           "title": "学史习记",
           "href": "page/area.html",
@@ -30,13 +24,25 @@
         {
           "title": "电竞排行",
           "href": "page/menu.html",
-          "icon": "fa fa-window-maximize",
+          "icon": "fa fa-gamepad",
           "target": "_self"
         },
         {
-          "title": "影片放映",
+          "title": "红色观影",
           "href": "page/setting.html",
-          "icon": "fa fa-gears",
+          "icon": "fa fa-video-camera",
+          "target": "_self"
+        },
+        {
+          "title": "篮球比赛",
+          "href": "page/lanqiu.html",
+          "icon": "fa fa-dribbble",
+          "target": "_self"
+        },
+        {
+          "title": "足球比赛",
+          "href": "page/zuqiu.html",
+          "icon": "fa fa-futbol-o",
           "target": "_self"
         }
       ]
