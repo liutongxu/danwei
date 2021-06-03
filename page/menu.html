@@ -161,14 +161,37 @@
 
 
                     <div class="layuimini-notice">
-                        <div class="layuimini-notice-title">虎屯联赛第一场</div>
+                        <div class="layuimini-notice-title">联赛第一场通知</div>
                         <div class="layuimini-notice-extra">2021-06-03</div>
                         <div text-align="center" class="layuimini-notice-content layui-hide">
                             <div align="center" style="margin-top:0;"><img src="images/20210603dianjing.jpg"
                                     style="width: 250px;" /></div>
-                                    长按选择【搜一搜】打开链接<br>
-                            报名截止2021-06-04 22:30<br>
-                            扫描可以报名和关注比赛<br>
+                            长按选择【搜一搜】打开链接<br>
+                            6.5-6.6周六、周日两天安排王者荣耀联赛第一场比赛。<br>
+                            报名截止时间：6.3周五22点前<br>
+                            16进8比赛时间：6.4周六上午10:00<br>
+                            8进4比赛时间：6.4周六下午15:30<br>
+                            半决赛时间：6.4周六晚19:00<br>
+                            决赛时间：6.5周日上午10:00<br>
+
+
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="layuimini-notice">
+                        <div class="layuimini-notice-title">参赛及积分规则</div>
+                        <div class="layuimini-notice-extra">2021-06-03</div>
+                        <div text-align="center" class="layuimini-notice-content layui-hide">
+                                    1.根据赛程安排提前2天发布通知。<br>
+                                    2.各战队按报名截止时间进行报名，到时未报名参赛的视为本场弃权。<br>
+                                    3.联赛采取固定时间比赛，比赛双方准时进行，到时未比赛视为弃权。<br>
+                                    4.进入8强、4强、决赛队伍每次计1分，本场冠军额外计2分。<br>
+                                    （例：XX战队进入8强+1分，进入4强+1分，进入决赛+1分，取得冠军+2分。）<br>
+
+
                         </div>
                     </div>
 
@@ -194,7 +217,7 @@
 
 <script>
 
-    layui.use(['form', 'table', 'miniPage', 'element','layer','echarts'], function () {
+    layui.use(['form', 'table', 'miniPage', 'element', 'layer', 'echarts'], function () {
         var $ = layui.jquery,
             form = layui.form,
             table = layui.table,
@@ -212,22 +235,22 @@
                 icon: 'layui-icon-tips'
             }],
             cols: [[
-                { field: 'danwei', align:'center', width: '26%', title: '单位', sort: true },
-                { field: 'zhandui', align:'center', width: '51%', title: '战队名称', sort: true },
-                { field: 'jifen', align:'center', width: '25%', title: '积分', sort: true },
-                { field: 'duizhang', align:'center', width: '26%', title: '队长', sort: true },
-                { field: 'dianhua', align:'center', width: '40%', title: '电话', sort: true },
-                { field: 'weixin', align:'center', width: '50%', title: '微信', sort: true },
+                { field: 'danwei', align: 'center', width: '26%', title: '单位', sort: true },
+                { field: 'zhandui', align: 'center', width: '51%', title: '战队名称', sort: true },
+                { field: 'jifen', align: 'center', width: '25%', title: '积分', sort: true },
+                { field: 'duizhang', align: 'center', width: '26%', title: '队长', sort: true },
+                { field: 'dianhua', align: 'center', width: '40%', title: '电话', sort: true },
+                { field: 'weixin', align: 'center', width: '50%', title: '微信', sort: true },
             ]],
 
 
         });
 
 
-                /**
-         * 查看公告信息
-         **/
-         $('body').on('click', '.layuimini-notice', function () {
+        /**
+ * 查看公告信息
+ **/
+        $('body').on('click', '.layuimini-notice', function () {
             var title = $(this).children('.layuimini-notice-title').text(),
                 noticeTime = $(this).children('.layuimini-notice-extra').text(),
                 content = $(this).children('.layuimini-notice-content').html();
