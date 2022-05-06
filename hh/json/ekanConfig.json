@@ -29,7 +29,7 @@
     "version" : "2022.05.07",
     "info" : "首页不显示正在修复中，<font color=#FF0000>目前搜索正常，可以使用搜索功能</font>,bug正在修复中！",
     "time": 3000,
-    "visible" : false
+    "visible" : true
 
   },
 
