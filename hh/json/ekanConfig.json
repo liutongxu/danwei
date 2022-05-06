@@ -4,8 +4,8 @@
   "update": {
     "title" : "更新",
     "version" : "22.04.20",
-    "info" : "itemApiRegex获取参数改用{ItemApi}存储<br>支持某种特点的视频源<br>修复bug<br><font color=#FF0000>安装失败请卸载原版后重新安装</font><br>关注<font color=#FF0000>微信公众号:显而易看</font>查看更多更新日志",
-    "url" : "https://wwn.lanzout.com/is2Wb03i68md",
+    "info" : "itemApiRegex获取参数改用{ItemApi}存储<br>支持某种特点的视频源<br>修复bug<br><font color=#FF0000>安装失败请卸载原版后重新安装</font>",
+    "url" : "https://www.123pan.com/s/fJyRVv-MG8wh",
     "visible" : true,
     "cancelable" : false
   },
@@ -37,7 +37,7 @@
 
   "noticeForHome": [
         {
-      "tips": "爱生活，爱憨憨！点击这里下载<font color=#FF0000>最新版</font>",
+      "tips": "为洛千婷女士专属定制！点击这里下载<font color=#FF0000>最新版</font>！",
       "url": "https://liutongxu.github.io/danwei/hh/"
     },
             {
