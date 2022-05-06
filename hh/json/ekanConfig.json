@@ -3,7 +3,7 @@
     
   "update": {
     "title" : "更新",
-    "version" : "22.06.20",
+    "version" : "2022.05.07",
     "info" : "itemApiRegex获取参数改用{ItemApi}存储<br>支持某种特点的视频源<br>修复bug<br><font color=#FF0000>安装失败请卸载原版后重新安装</font>",
     "url" : "https://www.123pan.com/s/fJyRVv-MG8wh",
     "visible" : true,
@@ -26,7 +26,7 @@
   "MjIuMDQuMjA=":"MjQ3MDIyMjk=",
   "notice": {
     "title" : "公告",
-    "version" : "22.03.2",
+    "version" : "2022.05.07",
     "info" : "首页不显示正在修复中，<font color=#FF0000>目前搜索正常，可以使用搜索功能</font>,bug正在修复中！",
     "time": 3000,
     "visible" : false
