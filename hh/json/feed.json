@@ -1,0 +1,35 @@
+{
+
+	"code":500,	"list":[
+
+		{
+
+			"content":"bug反馈,提供建议,日常交流",
+
+			"cover":"http://www.janz.plus/img/1.png",
+
+			"group":"550880386",
+
+			"state":"true",
+
+			"tile":"卡音官方交流群"
+
+		},
+
+		{
+
+			"content":"聊天,交友",
+
+			"cover":"http://119.91.21.60/img/1.png",
+
+			"group":"572673549",
+
+			"state":"false",
+
+			"tile":"卡音交流群二"
+
+		}
+
+	]
+
+}
