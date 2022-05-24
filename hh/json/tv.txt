@@ -1,5 +1,5 @@
 憨憨直播,#genre#
-通知公告,https://lark-assets-prod-aliyun.oss-cn-hangzhou.aliyuncs.com/yuque/0/2022/mp4/1144360/1653398040887-resources/28202346/mp4/583cef25-2768-4c3b-a73a-c2d8b5fd10fc.mp4?OSSAccessKeyId=LTAI4GGhPJmQ4HWCmhDAn4F5&Expires=1653399876&Signature=4hz%2BetQKpIHw%2B8%2F654VypUbF%2Bvg%3D&response-content-disposition=attachment%3Bfilename*%3DUTF-8%27%27start.mp4
+通知公告,https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3YvcyFBbXotNkFIQmFvWllsd3hhVnVIMm9NOUU3MGM3P2U9Z2RZdnFB.mp4
 央视频道,#genre#
 CCTV1,http://cooltv.top/tv/aishang.php?id=cctv1hd$全国
 CCTV1,http://39.136.48.2:8089/PLTV/88888888/224/3221225859/index.m3u8$华东
