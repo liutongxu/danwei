@@ -1,7 +1,6 @@
 憨憨直播,#genre#
 通知公告,https://v26-web.douyinvod.com/212a327426d21d8198c953e5ba104146/628c6e0b/video/tos/cn/tos-cn-ve-15-alinc2/1a165be7c4a5470596beaa3c25c1f570/?a=6383&ch=10&cr=0&dr=0&lr=all&cd=0%7C0%7C0%7C0&br=1744&bt=1744&cs=0&ds=3&ft=5q_lc5mmnPD12NeAAq.-Ux-JvLY6c3wv25y3&mime_type=video_mp4&qs=0&rc=ZjlpZGZpOmg2O2RlZDY6aUBpamhuZ2g6ZjZnOTMzNGkzM0AtYS1hMWM2NV4xM2EzXzM0YSMvaGkycjRvZzVgLS1kLWFzcw%3D%3D&l=021653366742432fdbddc0300fff0010a8d259c000000305b3025
 央视频道,#genre#
-1111,http://cooltv.top/tv/aishang.php?id=hunwshd$华东
 CCTV1,http://39.136.48.2:8089/PLTV/88888888/224/3221225859/index.m3u8$华东
 CCTV1,http://39.136.48.5:8089/PLTV/88888888/224/3221225859/index.m3u8$华东
 CCTV1,http://39.136.48.7:8089/PLTV/88888888/224/3221225859/index.m3u8$华东
@@ -143,7 +142,12 @@ CCTV风云剧场,http://117.148.179.147/PLTV/88888888/224/3221231604/index.m3u8
 CCTV兵器科技,http://iptv.tvfix.org/hls/cctvbqkjhd.m3u8
 CCTV世界地理,http://117.148.179.147/PLTV/88888888/224/3221231537/index.m3u8
 中影老故事,http://39.134.19.248:6610/yinhe/2/ch00000090990000001315/index.m3u8?virtualDomain=yinhe.live_hls.zte.com
+
+
+
 卫视频道,#genre#
+辽宁卫视,http://cooltv.top/tv/yqdtv.php?id=145$全国
+辽宁卫视,http://39.134.115.163:8080/PLTV/88888910/224/3221225696/index.m3u8$华东
 安徽卫视,http://39.134.115.163:8080/PLTV/88888910/224/3221225691/index.m3u8
 北京纪实,http://39.135.138.59:18890/PLTV/88888910/224/3221225676/index.m3u8
 北京卫视,http://39.134.115.163:8080/PLTV/88888910/224/3221225673/index.m3u8
@@ -162,7 +166,6 @@ CCTV世界地理,http://117.148.179.147/PLTV/88888888/224/3221231537/index.m3u8
 吉林卫视,http://39.134.115.163:8080/PLTV/88888910/224/3221225680/index.m3u8
 江苏卫视,http://39.134.115.163:8080/PLTV/88888910/224/3221225702/index.m3u8
 江西卫视,http://39.134.115.163:8080/PLTV/88888910/224/3221225705/index.m3u8
-辽宁卫视,http://39.134.115.163:8080/PLTV/88888910/224/3221225696/index.m3u8
 龙江卫视,http://39.135.138.59:18890/PLTV/88888910/224/3221225690/index.m3u8
 内蒙卫视,http://39.135.138.59:18890/PLTV/88888910/224/3221225667/index.m3u8
 宁夏卫视,http://39.134.115.163:8080/PLTV/88888910/224/3221225726/index.m3u8
