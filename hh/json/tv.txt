@@ -1,8 +1,8 @@
 憨憨直播,#genre#
 通知公告,https://6c69-liutongxu521-1251819038.tcb.qcloud.la/start.mp4?sign=9676e8d4cbc7b8e1f6d1e70b5aad8ea7&t=1653410352
 央视频道,#genre#
-CCTV1,http://cooltv.top/tv/aishang.php?id=cctv1hd$全国
 CCTV1,http://39.136.48.2:8089/PLTV/88888888/224/3221225859/index.m3u8$华东
+CCTV1,http://cooltv.top/tv/aishang.php?id=cctv1hd$全国
 CCTV1,http://39.136.48.5:8089/PLTV/88888888/224/3221225859/index.m3u8$华东
 CCTV1,http://39.136.48.7:8089/PLTV/88888888/224/3221225859/index.m3u8$华东
 CCTV1,http://59.49.41.41/live.aishang.ctlcdn.com/00000110240127_1/playlist.m3u8?CONTENTID=00000110240127_1$华北
@@ -55,9 +55,9 @@ CCTV5+,http://39.135.55.105:6610/PLTV/88888888/224/3221225939/index.m3u8?service
 CCTV5+,http://39.135.55.105:6610/PLTV/88888888/224/3221226919/index.m3u8?servicetype=1$华南
 CCTV5+,http://tlivectfree-cdn.ysp.cctv.cn/ysp/2000204503.m3u8$全国
 CCTV5+,http://iptv.tvfix.org/hls/cctv5phd.m3u8$全国
+CCTV6,http://39.135.55.105:6610/PLTV/88888888/224/3221227137/index.m3u8?servicetype=1$华南
 CCTV6,http://cooltv.top/tv/aishang.php?id=cctv6hd$全国
 CCTV6,http://59.49.41.41/live.aishang.ctlcdn.com/00000110240247_1/playlist.m3u8?CONTENTID=00000110240247_1$华北
-CCTV6,http://39.135.55.105:6610/PLTV/88888888/224/3221227137/index.m3u8?servicetype=1$华南
 CCTV6,http://iptv.tvfix.org/hls/cctv6hd.m3u8$全国
 CCTV7,http://39.136.48.2:8089/PLTV/88888888/224/3221225753/index.m3u8$华东
 CCTV7,http://39.136.48.5:8089/PLTV/88888888/224/3221225753/index.m3u8$华东
