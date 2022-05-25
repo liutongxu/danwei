@@ -241,7 +241,6 @@ NHK华语视界,https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.
 
 体育,#genre#
 PP体育,http://117.148.179.172/PLTV/88888888/224/3221231778/index.m3u8
-风云足球,http://117.148.179.137/PLTV/88888888/224/3221231547/index.m3u8
 五星体育,http://111.40.196.25/PLTV/88888888/224/3221225503/index.m3u8$全国
 五星体育,http://140.207.241.2:8080/live/program/live/ssty/4000000/mnf.m3u8$全国
 精品体育,http://39.134.66.66/PLTV/88888888/224/3221225526/index.m3u8
@@ -273,14 +272,11 @@ CCTV5+,http://39.135.138.59:18890/PLTV/88888910/224/3221225649/index.m3u8$全国
 冬奥纪实4K,http://117.148.179.157/PLTV/88888888/224/3221233448/index.m3u8$全国
 冬奥纪实8K,http://117.148.179.157/PLTV/88888888/224/3221233395/index.m3u8$全国
 冬奥纪实8K,http://117.148.179.157/PLTV/88888888/224/3221233142/index.m3u8$全国
+风云足球,http://117.148.179.137/PLTV/88888888/224/3221231547/index.m3u8
 央视台球,http://117.148.179.167/PLTV/88888888/224/3221231616/index.m3u8
 四海钓鱼,http://117.148.179.159/PLTV/88888888/224/3221231718/index.m3u8
-劲爆体育,http://111.26.225.22/PLTV/2/224/3221225658/index.m3u8
-纬来体育,http://211.23.114.106:8563/http/59.120.8.187:8081/hls/67/809/ch28.m3u8
-Star Sports,http://iptv.tvfix.org/hls/starsports.m3u8
-MAX极速汽车,http://39.134.39.38/PLTV/88888888/224/3221226195/index.m3u8
-劲爆体育,http://shbu.live.bestvcdn.com.cn:8080/live/program/live/jbtyhd/2300000/mnf.m3u8
-体育赛事,http://39.136.18.76/cdnrrs.gz.chinamobile.com/PLTV/88888888/224/3221226253/1/index.m3u8?fmt=ts2hls
+劲爆体育,http://111.26.225.22/PLTV/2/224/3221225658/index.m3u8$全国
+劲爆体育,http://shbu.live.bestvcdn.com.cn:8080/live/program/live/jbtyhd/2300000/mnf.m3u8$全国
 新视觉HD,http://183.207.255.188/live/program/live/xsjhd/4000000/mnf.m3u8
 风尚运动,http://211.94.219.178:18080/PLTV/68/224/3221226429/index.m3u8
 超级體育,http://39.135.138.59:18890/PLTV/88888910/224/3221225622/index.m3u8
