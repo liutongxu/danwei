@@ -261,6 +261,8 @@ CCTV5+,http://117.148.179.136/PLTV/88888888/224/3221231459/index.m3u8$全国
 CCTV5+,http://httplive.slave.bfgd.com.cn:14311/playurl？playtype=live&protocol=http&accesstoken=R5F2408FEU3198804BK78052214IE73560DFP2BF4M340CE68V0Z339CBW1626D4D261E46FEA&playtoken=ABCDEFGH&programid=4200000246$全国
 CCTV5+,http://117.169.124.46:6410/ysten-businessmobile/live/hdcctv05plus/1.m3u8$全国
 CCTV5+,http://39.135.138.59:18890/PLTV/88888910/224/3221225649/index.m3u8$全国
+游戏风云,http://183.207.255.188/live/program/live/yxfyhd/4000000/mnf.m3u8$全国
+游戏风云,http://39.134.18.65/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226579/index.m3u8$全国
 精品体育,http://39.134.66.66/PLTV/88888888/224/3221225526/index.m3u8 
 咪咕视频,http://39.134.65.162/PLTV/88888888/224/3221225611/index.m3u8 
 冬奥纪实,http://117.148.179.157/PLTV/88888888/224/3221233044/index.m3u8$全国
@@ -271,7 +273,6 @@ CCTV5+,http://39.135.138.59:18890/PLTV/88888910/224/3221225649/index.m3u8$全国
 冬奥纪实4K,http://117.148.179.157/PLTV/88888888/224/3221233448/index.m3u8$全国
 冬奥纪实8K,http://117.148.179.157/PLTV/88888888/224/3221233395/index.m3u8$全国
 冬奥纪实8K,http://117.148.179.157/PLTV/88888888/224/3221233142/index.m3u8$全国
-
 劲爆体育,http://111.26.225.22/PLTV/2/224/3221225658/index.m3u8 
 纬来体育,http://211.23.114.106:8563/http/59.120.8.187:8081/hls/67/809/ch28.m3u8
 Star Sports,http://iptv.tvfix.org/hls/starsports.m3u8
@@ -285,8 +286,6 @@ MAX极速汽车,http://39.134.39.38/PLTV/88888888/224/3221226195/index.m3u8
 超级體育,http://39.135.138.59:18890/PLTV/88888910/224/3221225622/index.m3u8
 魅力足球,http://183.207.255.188/live/program/live/mlyyhd/4000000/mnf.m3u8
 HWF散打,http://pull-g.kktv8.com/livekktv/57588147.flv
-游戏风云1,http://183.207.255.188/live/program/live/yxfyhd/4000000/mnf.m3u8$全国
-游戏风云2,http://39.134.18.65/dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226579/index.m3u8$全国
 纬来育乐台,mitv://ns2.hellotvvod.com:9906/ed2847f9731a48e19afc2ba479a73939 
 纬来体育台,mitv://ns2.hellotvvod.com:9906/cd64bcebb70d4b489bf734c5b3369002 
 ELEVEN体育1台,mitv://ns2.hellotvvod.com:9906/0c9c4a9fc07c41bb8537828dd9162e81 
