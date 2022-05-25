@@ -231,6 +231,10 @@ CCTV世界地理,http://117.148.179.147/PLTV/88888888/224/3221231537/index.m3u8
 凤凰香港,http://183.207.249.34/PLTV/3/224/3221226975/index.m3u8
 CNC中文,http://source07.v.news.cn/live/CNC_CN/playlist.m3u8
 CNC英文,http://source07.v.news.cn/live/CNC_EN/playlist.m3u8
+翡翠台,https://pull-hls-l1.ixigua.com/live/cb6ea4c809a750d3dcf4b9664f71fdef/playlist.m3u8
+TVB明珠,https://pull-hls-l1.ixigua.com/live/294acc7340777dadac9ff7edfbe324c5/1653455714.ts?wsApp=HLS&wsMonitor=0
+无限新闻台,https://pull-hls-l1.ixigua.com/live/8fed88823de3701897fd6892cafd1797/1653455727.ts?wsApp=HLS&wsMonitor=0
+NOW新闻,https://pull-hls-l1.ixigua.com/live/6b0bb3c9f90f7fa37bf22eeff7760697/1653455711.ts?wsApp=HLS&wsMonitor=0
 澳门卫视,http://61.244.22.4/ch3/ch3.live/chunklist_w1228316132.m3u8$全国
 澳门卫视,http://61.244.22.4/ch3/ch3.live/playelist.m3u8$全国
 澳门莲花,http://anren.live/HK/BiIOU11uLA.m3u8$全国
