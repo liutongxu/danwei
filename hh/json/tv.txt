@@ -166,7 +166,6 @@ CCTV世界地理,http://117.148.179.147/PLTV/88888888/224/3221231537/index.m3u8
 
 
 卫视频道,#genre#
-卫视,#genre#
 浙江卫视,http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225703/index.m3u8#http://hw-m-l.cztv.com/channels/lantian/channel001/1080p.m3u8#http://39.134.115.163:8080/PLTV/88888910/224/3221225703/index.m3u8#http://153.35.100.114:80/tlivectfree-cdn.ysp.cctv.cn/ysp/2000295503.m3u8#http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225798/index.m3u8#http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226199/index.m3u8#http://117.148.179.140/PLTV/88888888/224/3221229352/index.m3u8
 湖南卫视,http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225704/index.m3u8#http://39.134.19.32/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221225799/1.m3u8#http://39.134.115.163:8080/PLTV/88888910/224/3221225704/index.m3u8#http://153.35.100.114:80/tlivectfree-cdn.ysp.cctv.cn/ysp/2000296203.m3u8#http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225799/index.m3u8#http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226211/index.m3u8#http://117.148.179.172/PLTV/88888888/224/3221231729/index.m3u8#http://117.148.179.135/PLTV/88888888/224/3221230206/index.m3u8#http://117.148.179.148/PLTV/88888888/224/3221230824/index.m3u8#http://117.148.179.162/PLTV/88888888/224/3221230206/index.m3u8#http://117.148.179.162/PLTV/88888888/224/3221230232/index.m3u8#http://117.148.179.162/PLTV/88888888/224/3221230824/index.m3u8
 东方卫视,http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225659/index.m3u8#http://39.134.19.1/dbiptv.sn.chinamobile.com/PLTV/88888888/224/3221225797/1.m3u8#http://39.134.115.163:8080/PLTV/88888910/224/3221225659/index.m3u8#http://153.35.100.114:80/tlivectfree-cdn.ysp.cctv.cn/ysp/2000292403.m3u8#http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226261/index.m3u8#http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226217/index.m3u8#http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225797/index.m3u8#http://117.148.179.160/PLTV/88888888/224/3221231738/index.m3u8#http://117.148.179.167/PLTV/88888888/224/3221231450/index.m3u8
@@ -205,7 +204,7 @@ CCTV世界地理,http://117.148.179.147/PLTV/88888888/224/3221231537/index.m3u8
 三沙卫视,http://pull2.ssws.tv/live/SswsTV20210803.m3u8
 延边卫视,http://39.135.138.58:18890/PLTV/88888888/224/3221226201/index.m3u8
 
-国际,#genre#
+国际频道,#genre#
 凤凰资讯,http://117.169.119.199:8080/live/fhzixun/index.m3u8$全国
 凤凰资讯,http://play-live.ifeng.com/live/06OLEEWQKN4.m3u8$全国
 凤凰资讯,http://playtv-live.ifeng.com/live/06OLEEWQKN4.m3u8$全国
@@ -229,7 +228,7 @@ NOW新闻,https://pull-hls-l1.ixigua.com/live/6b0bb3c9f90f7fa37bf22eeff7760697/1
 澳视澳门,http://103.233.191.134:1935/ch1/ch1.live/playlist.m3u8$全国
 NHK华语视界,https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8
 
-体育,#genre#
+体育频道,#genre#
 PP体育,http://117.148.179.172/PLTV/88888888/224/3221231778/index.m3u8
 五星体育,http://111.40.196.25/PLTV/88888888/224/3221225503/index.m3u8$全国
 五星体育,http://140.207.241.2:8080/live/program/live/ssty/4000000/mnf.m3u8$全国
@@ -300,7 +299,7 @@ NewTV古装剧场,http://39.134.66.66/PLTV/88888888/224/3221225524/index.m3u8
 NewTV明星大片,http://39.134.66.66/PLTV/88888888/224/3221225550/index.m3u8
 
 
-斗鱼,#genre#
+斗鱼轮播,#genre#
 【RM-点播】点播！模式-24H欢乐不断,http://zzy789.xyz/douyu1.php?id=131977
 【RM-轮播】轮播！模式-24H欢乐不断,http://zzy789.xyz/douyu1.php?id=7298973
 【特辑】精彩大片,欢迎品鉴,http://zzy789.xyz/douyu1.php?id=3637778
@@ -373,7 +372,7 @@ NewTV明星大片,http://39.134.66.66/PLTV/88888888/224/3221225550/index.m3u8
 LexBurner,http://zzy789.xyz/bili.php?id=11365
 -猫大人-,http://zzy789.xyz/bili.php?id=723
 
-虎牙,#genre#
+虎牙轮播,#genre#
 RM 刘在石李光洙跑男,http://61.241.131.18/tx.rtmp.huya.com/1250011-1250011-5368756364640256-2777071322-10057-A-0-1.m3u8
 搞笑的一家人,http://61.241.131.18/tx.rtmp.huya.com/1394565211-1394565211-5989611973384339456-2789253878-10057-A-0-1.m3u8
 网球王子·费德勒看了想打人	,http://61.241.131.18/tx.rtmp.huya.com/1423782044-1423782044-6115097315612033024-2847687544-10057-A-0-1.m3u8
