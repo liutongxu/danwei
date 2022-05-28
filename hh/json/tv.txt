@@ -210,10 +210,8 @@ CCTV世界地理,http://117.148.179.147/PLTV/88888888/224/3221231537/index.m3u8
 延边卫视,http://39.135.138.58:18890/PLTV/88888888/224/3221226201/index.m3u8
 
 国际频道,#genre#
-凤凰资讯,http://117.169.119.199:8080/live/fhzixun/index.m3u8$全国
 凤凰资讯,http://play-live.ifeng.com/live/06OLEEWQKN4.m3u8$全国
 凤凰资讯,http://playtv-live.ifeng.com/live/06OLEEWQKN4.m3u8$全国
-凤凰中文,http://117.169.119.199:8080/live/fhchinese/index.m3u8$全国
 凤凰中文,http://play-live.ifeng.com/live/06OLEGEGM4G.m3u8$全国
 凤凰中文,http://playtv-live.ifeng.com/live/06OLEGEGM4G.m3u8$全国
 凤凰香港,http://183.207.249.34/PLTV/3/224/3221226975/index.m3u8
