@@ -1,6 +1,7 @@
 憨憨直播,#genre#
 通知公告,https://6c69-liutongxu521-1251819038.tcb.qcloud.la/start.mp4?sign=9676e8d4cbc7b8e1f6d1e70b5aad8ea7&t=1653410352
-NBA,https://play.hfjiaan.cn/live/hd-zh-2-3664673.m3u8
+ESPN NBA,https://play.hfjiaan.cn/live/hd-zh-2-3664673.m3u8
+腾讯体育 NBA,https://live02-ali.13cskppe.com/live/tengxuntiyu21.m3u8?auth_key=1654178700-38fdd63fadb048f0b031c1a80094d585-0-39411daf5cec1d340e66b004dd536c0e
 央视频道,#genre#
 CCTV1,http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225642/index.m3u8$全国
 CCTV1,http://39.136.48.2:8089/PLTV/88888888/224/3221225859/index.m3u8$华东
