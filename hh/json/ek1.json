@@ -2,17 +2,17 @@
 
   "targetVersion": 5,
 
-  "name": "自由如风",
+  "name": "隔壁刘所长",
 
-  "author": "json",
+  "author": "隔壁刘所长",
 
-  "contact": "json",
+  "contact": "隔壁刘所长",
 
   "message": "请在使用24小时内删除此订阅！",
 
   "version5Link": "",
 
-   "editable": false,
+   "editable": true,
 
   "searchConfig": [
 
