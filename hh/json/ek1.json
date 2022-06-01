@@ -300,6 +300,17 @@
   "televisionList": [
     {
       "uiType" : "NotEPG",
+      "tvName" : "咪咕视频-NBA直播",
+      "tvList" : [
+        {
+          "sniff": true,
+          "tvUrlTips" : "HD" ,
+          "tvUrl" : "http://39.134.65.162/PLTV/88888888/224/3221225611/index.m3u8"
+        }
+      ]
+    },
+    {
+      "uiType" : "NotEPG",
       "tvName" : "罗翔刑法",
       "tvList" : [
         {
