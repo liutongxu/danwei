@@ -15,6 +15,25 @@
       "searchUrl": "https://www.58wk.com"
     },
 {
+	"extensions":"m3u8",
+	"configType":"WebPage",
+	"searchUrl":"aHR0cHM6Ly93d3cudGVnb3V5cy5jb20veGdhcHAucGhwL3YyL3NlYXJjaD9wZz0xJnRleHQ9e1NlYXJjaFdvcmR9JnRva2VuPSZjc3JmPQ==",
+	"searchNameRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9uYW1lIjoiKC4qPykiLCk=",
+	"searchUrlRegex":"InZvZF9pZCI6KC4qPyks",
+	"searchPictureRegex":"InZvZF9waWMiOiIoLio/KSIs",
+	"searchStateRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9yZW1hcmtzIjoiKC4qPykiLCk=",
+	"itemUrl":"aHR0cHM6Ly93d3cudGVnb3V5cy5jb20veGdhcHAucGhwL3YyL3ZpZGVvX2RldGFpbD9pZD17U2VhcmNoVXJsT3JJZH0mY2s9",
+	"itemRangeRegex":"InZvZF91cmxfd2l0aF9wbGF5ZXIiOlxbKFtcd1xXXSo/KVxd",
+	"itemRangeSplit":"\\},\\{",
+	"itemRangeSplitPick":"wuduzy@tkqp@qq@iqiyi@wuduby",
+	"itemNameRegex":"VW5pY29kZS5kZWNvZGUoKFteIl0qPylcJC4qP1sjIl17MX0p",
+	"itemUrlRegex":"W14iXSo/XCQoLio/KVsjIl17MX0=",
+	"realUrl":"aHR0cHM6Ly9jYWNoZS50ZWdvdXlzLmNvbS9kd3NtLnBocD91cmw9e0l0ZW1VcmxPcklkfT9IZWFkZXI9eyJVc2VyLUFnZW50IjoiTW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDEyOyBWMjEzNkEgQnVpbGQvU1AxQS4yMTA4MTIuMDAzOyB3dikgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgVmVyc2lvbi80LjAgQ2hyb21lLzkxLjAuNDQ3Mi4xMTQgTW9iaWxlIFNhZmFyaS81MzcuMzYifQ==",
+	"realUrlRegex":"YWxpenl3XCgiKC4qPykiXCk7",
+	"configName":"555电影(推荐)",
+	"encrypted":true
+},
+{
 	"configType":"WebPage",
 	"extensions":"undetermined",
 	"searchUrl":"http://tcspvip.cn/api.php/v1.vod?wd={SearchWord}",
