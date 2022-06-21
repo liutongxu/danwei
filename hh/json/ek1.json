@@ -5,7 +5,7 @@
   "contact": "隔壁刘所长",
   "message": "请在使用24小时内删除此订阅！",
   "version5Link": "",
-   "editable": true,
+   "editable": false,
 
 
   "searchConfig": [
@@ -14,7 +14,26 @@
       "configType": "Kuyun77",
       "searchUrl": "https://www.58wk.com"
     },
-
+{
+	"configType":"WebPage",
+	"extensions":"undetermined",
+	"searchUrl":"http://tcspvip.cn/api.php/v1.vod?wd={SearchWord}",
+	"searchNameRegex":"Unicode.decode(\"vod_name\":\"(.*?)\")",
+	"searchUrlRegex":"\"vod_id\":(.*?),\"",
+	"searchPictureRegex":"\"vod_pic\":\"(.*?)\"",
+	"searchTypeRegex":"Unicode.decode(\"type_id\":.*?,\"type_name\":\"(.*?)\")",
+	"itemUrl":"http://tcspvip.cn/api.php/v1.vod/detail?vod_id={SearchUrlOrId}",
+	"itemRangeRegex":"\"vod_play_list\":\\[([\\w\\W]*?)\\]",
+	"itemRangeSplit":"\\{,\\}\\]",
+	"itemRangeSplitPick":"wuduzy",
+	"itemApiRegex":"String.replace[..,.](Html.decode(\"parse2\":\\s?\"\\s?(.*?)[,\"]{1}.*,))",
+	"itemNameRegex":"Unicode.decode(([^\"]*?)\\$.*?[#\"]{1})",
+	"itemUrlRegex":"String.replaceAll[\\\\/,/]([^\"]*?\\$(.*?)[#\"]{1})",
+	"realUrl":"{ItemApi}{ItemUrlOrId}",
+	"realUrlRegex":"\"url\":\\s?\"(.*?)\"",
+	"realExtensionsRegex":"\"type\":\\s?\"(.*?)\",",
+	"configName":"天成"
+},
     {
       "extensions":"unknown",
       "configType":"WebPage",
@@ -26,24 +45,39 @@
       "itemUrlRegex":"<li class.*><a href=\"(/vod-play-id-\\d*-sid-1-pid-\\d*\\.html)\" class=\".*\">.*</a></li>",
       "configName":"盒子"
     },
-{
-	"extensions":"undetermined",
+    {
 	"configType":"WebPage",
-	"searchUrl":"aHR0cHM6Ly9keHlzNjYuY29tL2FwaS92MS9TZWFyY2gvU2VhcmNoP2RhdGE9e1NlYXJjaFdvcmR9JnBhZ2U9MSZsaW1pdD0zMCY=",
-	"searchNameRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9uYW1lIjoiKC4qPykiLCk=",
-	"searchUrlRegex":"InZvZF9pZCI6KC4qPyks",
-	"searchPictureRegex":"InZvZF9waWMiOiIoLio/KSIs",
-	"searchTypeRegex":"VW5pQ29kZS5kZWNvZGUoInZvZF9jbGFzcyI6IiguKj8pIiwp",
-	"searchYearRegex":"InZvZF95ZWFyIjoiKC4qPyki",
-	"searchStateRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9yZW1hcmtzIjoiKC4qPykiLCk=",
-	"itemUrl":"aHR0cDovL3JlbndmeS50b3AvaXR2L3ZpZGVvL2RldGFpbHM/cGF0aD17U2VhcmNoVXJsT3JJZH0mc291cmNlPWhkeXMm",
-	"itemRangeRegex":"InBsYXkiOlxbKFtcV1x3XSo/KVxd",
-	"itemNameRegex":"VW5pQ29kZS5kZWNvZGUoInRleHQiOiIoLio/KSIsKQ==",
-	"itemUrlRegex":"SHRtbC5kZWNvZGUoInVybCI6IiguKj8pIik=",
+	"sniffExcludeRegex":"aHR0cHM6Ly95c2djLnRqb21ldC5jb20vLiouanBn",
+	"searchUrl":"aHR0cHM6Ly95c2djLmNjL2luZGV4LnBocC9hamF4L3N1Z2dlc3Q/bWlkPTEmd2Q9e1NlYXJjaFdvcmR9",
+	"searchNameRegex":"bmFtZSI6IiguKj8pIiwi",
+	"searchUrlRegex":"aWQiOiguKj8pLCI=",
+	"realUrl":"e0l0ZW1VcmxPcklkfSZIZWFkZXI9eyJVc2VyLUFnZW50IjoiTW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDcuMS4xOyBNSSA1KSJ9",
+	"realUrlRegex":"InVybCI6XHM/IiguKj8pIiwidXJs",
+	"extensions":"unknown",
+	"finalUrl":"aHR0cHM6Ly95c2djLnRqb21ldC5jb20vP3VybD17UmVhbFVybE9ySWR9",
+	"searchPictureRegex":"U3RyaW5nLnJlcGxhY2VBbGxbXFwvLC9dKCJwaWMiOiIoLio/KSIp",
+	"itemUrl":"aHR0cHM6Ly95c2djLmNjL3ZvZGRldGFpbC97U2VhcmNoVXJsT3JJZH0uaHRtbA==",
+	"itemRangeRegex":"PHVsIGNsYXNzPSJteXVpLWNvbnRlbnRfX2xpc3Qgc2Nyb2xsYmFyIHNvcnQtbGlzdCBjbGVhcmZpeCIgc3R5bGU9Im1heC1oZWlnaHQ6IDMwMHB4OyBvdmVyZmxvdzogYXV0bzsiPihbXHdcV10qPyk8L3VsPg==",
+	"itemNameRegex":"PGEgY2xhc3M9ImJ0biBidG4tZGVmYXVsdCIgaHJlZj0iL3ZvZHBsYXkvLiotLiotLiouaHRtbCI+KC4qPyk8L2E+PC9saT4=",
+	"itemUrlRegex":"PGEgY2xhc3M9ImJ0biBidG4tZGVmYXVsdCIgaHJlZj0iKC92b2RwbGF5Ly4qLS4qLS4qLmh0bWwpIj4uKjwvYT48L2xpPg==",
+	"configName":"工厂",
+	"encrypted":true
+},
+    {
+	"extensions":"unknown",
+	"configType":"WebPage",
+	"sniffExcludeRegex":"aHR0cHM6Ly9wbGF5ZXIudGpvbWV0LmNvbS9sZ3l5Ly4qLmpwZw==",
+	"searchUrl":"aHR0cHM6Ly9sZ3l5LmNjL3Jzcy9pbmRleC54bWw/d2Q9e1NlYXJjaFdvcmR9",
+	"searchNameRegex":"PHRpdGxlPiguKj8pIC4qPC90aXRsZT4gCiAgIDxsaW5rPg==",
+	"searchUrlRegex":"PHRpdGxlPi4qIC4qPC90aXRsZT4gCiAgIDxsaW5rPiguKikg",
+	"searchStateRegex":"PHRpdGxlPi4qICguKik8L3RpdGxlPiAKICAgPGxpbms+",
+	"itemRangeRegex":"PGRpdiBjbGFzcz0ibW9kdWxlLXBsYXktbGlzdCI+KFtcd1xXXSo/KTwvZGl2Pg==",
+	"itemNameRegex":"PGEgY2xhc3M9Ii4qIiBocmVmPSIvdm9kcGxheS9cZCotXGQqLVxkKlwuaHRtbCIgdGl0bGU9Ii4qIj48c3Bhbj4oLio/KTwvc3Bhbj48L2E+",
+	"itemUrlRegex":"PGEgY2xhc3M9Ii4qIiBocmVmPSIoL3ZvZHBsYXkvXGQqLVxkKi1cZCpcLmh0bWwpIiB0aXRsZT0iLioiPjxzcGFuPi4qPC9zcGFuPjwvYT4=",
 	"realUrl":"e0l0ZW1VcmxPcklkfQ==",
-	"realUrlRegex":"U3RyaW5nLnJlcGxhY2VbfF0oInVybCI6IiguKj8pIik=",
-	"realExtensionsRegex":"InR5cGUiOiIoLio/KSI=",
-	"configName":"红豆(推荐)",
+	"realUrlRegex":"InVybCI6IiguKj8pIiwidXJs",
+	"finalUrl":"aHR0cHM6Ly9wbGF5ZXIudGpvbWV0LmNvbS9sZ3l5Lz91cmw9e1JlYWxVcmxPcklkfQ==",
+	"configName":"好看",
 	"encrypted":true
 },
 {
@@ -59,21 +93,6 @@
 	"itemUrlRegex":"PGxpPjxhIGhyZWY9IigvcGxheS9cZCotXGQqLVxkKlwuaHRtbCkiPi4qPC9hPjwvbGk+",
 	"configName":"草莓",
 	"encrypted":true
-},
-
-{
-	"extensions":"unknown",
-	"configType":"WebPage",
-	"sniffExcludeRegex":"https://zxh.la/kc.php?vid=daodm_0bc3uqagcaaaeyalmylp6fqzljgdmgsaayka",
-	"searchUrl":"https://www.libvio.com/ajax/suggest?mid=1&wd={SearchWord}?Header={\"User-Agent\":\"{WebViewUserAgent}\"}",
-	"searchNameRegex":"\"name\":\"(.*?)\"",
-	"searchUrlRegex":"\"id\":(.*?)\"",
-	"searchPictureRegex":"\"pic\":\"(.*?)\"",
-	"itemUrl":"https://www.libvio.com/detail/{SearchUrlOrId}.html?Header={\"User-Agent\":\"{WebViewUserAgent}\"}",
-	"itemNameRegex":"<li><a href=\"/play.*\">(.*?)</a></li>",
-	"itemUrlRegex":"<li><a href=\"(/play/\\d*-1-\\d*\\.html)\">.*</a></li>",
-	"realUrl":"{ItemUrlOrId}?Header={\"User-Agent\":\"{WebViewUserAgent}\"}",
-	"configName":"libvio"
 },
 {
 	"configType":"WebPage",
@@ -95,23 +114,57 @@
 	"realExtensionsRegex":"\"type\":\\s?\"(.*?)\",",
 	"configName":"世界"
 },
-
 {
-	"extensions":"m3u8",
+	"extensions":"unknown",
 	"configType":"WebPage",
-	"searchUrl":"aHR0cHM6Ly93d3cua3VhaXl1bnl5LmNvbS9hcGkucGhwL2FwcC9zZWFyY2g/cGc9MSZ0ZXh0PXtTZWFyY2hXb3JkfQ==",
-	"searchNameRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9uYW1lIjoiKC4qPykiLCk=",
-	"searchUrlRegex":"InZvZF9pZCI6KC4qPyks",
-	"searchPictureRegex":"InZvZF9waWMiOiIoLio/KSIs",
-	"searchStateRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9yZW1hcmtzIjoiKC4qPykiLCk=",
-	"itemUrl":"aHR0cHM6Ly93d3cua3VhaXl1bnl5LmNvbS9hcGkucGhwL2FwcC92aWRlb19kZXRhaWw/aWQ9e1NlYXJjaFVybE9ySWR9",
-	"itemRangeRegex":"InZvZF91cmxfd2l0aF9wbGF5ZXIiOlxbKFtcd1xXXSo/KVxd",
-	"itemRangeSplit":"\\},\\{",
-	"itemRangeSplitPick":"tkyun",
-	"itemNameRegex":"VW5pY29kZS5kZWNvZGUoKFteIl0qPylcJC4qP1sjIl17MX0p",
-	"itemUrlRegex":"VW5pY29kZS5kZWNvZGUoW14iXSo/XCQoLio/KVsjIl17MX0p",
-	"configName":"快看",
+	"searchUrl":"aHR0cHM6Ly93d3cuamlueGlhb3NodS50b3AvemhlbmJ1a2EucGhwP2FjdGlvbj1zZWFyY2gmcXVlcnk9e1NlYXJjaFdvcmR9",
+	"searchNameRegex":"Im5hbWUiOiIoLio/KSIs",
+	"searchUrlRegex":"ImlkIjoiKC4qPykiLA==",
+	"searchPictureRegex":"ImltZyI6IiguKj8pIg==",
+	"itemUrl":"aHR0cHM6Ly93d3cuemhlbmJ1a2E1LmNvbS92b2RkZXRhaWwve1NlYXJjaFVybE9ySWR9Lw==",
+	"itemRangeRegex":"PHVsIGNsYXNzPSJzdHVpLWNvbnRlbnRfX3BsYXlsaXN0IGNsZWFyZml4Ij4oW1x3XFddKj8pPC91bD4=",
+	"realUrl":"aHR0cHM6Ly93d3cuemhlbmJ1a2E1LmNvbXtJdGVtVXJsT3JJZH0=",
+	"itemNameRegex":"PGxpPjxhIGhyZWY9Ii92b2RwbGF5L1xkKi1cZCotXGQqLyI+KC4qPyk8L2E+PC9saT4=",
+	"itemUrlRegex":"PGxpPjxhIGhyZWY9Iigvdm9kcGxheS9cZCotXGQqLVxkKi8pIj4uKjwvYT48L2xpPg==",
+	"configName":"真不卡",
 	"encrypted":true
+},
+{
+	"configType":"WebPage",
+	"extensions":"undetermined",
+	"searchUrl":"aHR0cDovL2J1a2FpdmlwMi5jb20vaW5kZXgucGhwL3Jzcy54bWw/d2Q9e1NlYXJjaFdvcmR9JkhlYWRlcj17IlVzZXItQWdlbnQiOiJ7V2ViVmlld1VzZXJBZ2VudH0ifQ==",
+	"searchNameRegex":"PGl0ZW0+IAogICA8dGl0bGU+KC4qKSAuKjwvdGl0bGU+IAogICA8bGluaz4uKiAKICAgPGF1dGhvcj4=",
+	"searchUrlRegex":"PGl0ZW0+IAogICA8dGl0bGU+LiogLio8L3RpdGxlPiAKICAgPGxpbms+KC4qKSAKICAgPGF1dGhvcj4=",
+	"itemUrl":"e1NlYXJjaFVybE9ySWR9JkhlYWRlcj17IlVzZXItQWdlbnQiOiJ7V2ViVmlld1VzZXJBZ2VudH0ifQ==",
+	"itemRangeRegex":"PHVsIGNsYXNzPSJzdHVpLWNvbnRlbnRfX3BsYXlsaXN0IGNsZWFyZml4Ij4oW1x3XFddKj8pPC91bD4=",
+	"itemNameRegex":"PGxpPjxhIGhyZWY9Ii9pbmRleC5waHAvdm9kL3BsYXkvaWQvXGQqL3NpZC8xL25pZC9cZCpcLmh0bWwiPiguKik8L2E+PC9saT4=",
+	"itemUrlRegex":"PGxpPjxhIGhyZWY9IigvaW5kZXgucGhwL3ZvZC9wbGF5L2lkL1xkKi9zaWQvMS9uaWQvXGQqXC5odG1sKSI+Lio8L2E+PC9saT4=",
+	"realUrl":"e0l0ZW1VcmxPcklkfSZIZWFkZXI9eyJVc2VyLUFnZW50Ijoie1dlYlZpZXdVc2VyQWdlbnR9In0=",
+	"realUrlRegex":"InVybCI6IiguKj8pIiwidXJs",
+	"finalUrl":"aHR0cHM6Ly9nb29kLXZpcC5tbWl5dWUuY29tL19kZWZhdWx0L2hscy9uZXcve1JlYWxVcmxPcklkfS5tM3U4JkhlYWRlcj17IlVzZXItQWdlbnQiOiJ7V2ViVmlld1VzZXJBZ2VudH0ifQ==",
+	"configName":"BK",
+	"encrypted":true
+},
+{
+	"configType":"WebPage",
+	"extensions":"undetermined",
+	"searchUrl":"http://yinliub.cn/lvdou_api.php/v1.vod?wd={SearchWord}",
+	"searchNameRegex":"Unicode.decode(\"vod_name\":\"(.*?)\")",
+	"searchUrlRegex":"\"vod_id\":(.*?),\"",
+	"searchPictureRegex":"\"vod_pic\":\"(.*?)\"",
+	"searchTypeRegex":"Unicode.decode(\"type_id\":.*?,\"type_name\":\"(.*?)\")",
+	"itemUrl":"http://yinliub.cn/lvdou_api.php/v1.vod/detail?vod_id={SearchUrlOrId}",
+	"itemRangeRegex":"\"vod_play_list\":\\[([\\w\\W]*?)\\]",
+	"itemRangeSplit":"\\{,\\}\\]",
+	"itemRangeSplitPick":"wuduzy",
+	"itemApiRegex":"String.replace[..,.](Html.decode(\"parse2\":\\s?\"(.*?)[,\"]{1}.*,))",
+	"itemNameRegex":"Unicode.decode(([^\"]*?)\\$.*?[#\"]{1})",
+	"itemUrlRegex":"String.replaceAll[\\\\/,/](Unicode.decode([^\"]*?\\$(.*?)[#\"]{1}))",
+	"realTrigger":"notContains[.m3u8]",
+	"realUrl":"{ItemApi}{ItemUrlOrId}",
+	"realUrlRegex":"\"url\":\\s?\"(.*?)\",",
+	"realExtensionsRegex":"\"type\":\\s?\"(.*?)\",",
+	"configName":"上午"
 },
 {
 	"configName":"七七",
@@ -180,19 +233,79 @@
 	"encrypted":true
 },
 {
-	"configType":"WebPage",
-	"extensions":"undetermined",
-	"searchUrl":"aHR0cDovL2FwcC5ncmVsaWdodGluZy5jbi9hcGkucGhwL3YxLnZvZC9hbmRyb2lkc2VhcmNoP3BhZ2U9MSZ3ZD17U2VhcmNoV29yZH0=",
-	"searchNameRegex":"VW5pY29kZS5kZWNvZGUoIm5hbWUiOiIoLio/KSIp",
-	"searchUrlRegex":"ImlkIjooLio/KSwi",
-	"searchPictureRegex":"InBpYyI6IiguKj8pIg==",
-	"searchTypeRegex":"VW5pY29kZS5kZWNvZGUoImNsYXNzTmFtZSI6IiguKj8pIik=",
-	"searchYearRegex":"InllYXIiOiIoLio/KSIs",
-	"itemUrl":"aHR0cDovL2FwcC5ncmVsaWdodGluZy5jbi9hcGkucGhwL3YxLnZvZC9hbmRyb2lkZGV0YWlsP3ZvZF9pZD17U2VhcmNoVXJsT3JJZH0=",
-	"itemRangeRegex":"InVybHMiOlxbKFtcd1xXXSo/KVxd",
-	"itemNameRegex":"VW5pY29kZS5kZWNvZGUoImtleSI6IiguKj8pIiwp",
-	"itemUrlRegex":"InVybCI6IiguKj8pIg==",
+	"extensions":"m3u8",
+	"configType":"MacCMS",
+	"jsonArray":"data@list",
+	"searchUrl":"aHR0cDovL2FwcC5ncmVsaWdodGluZy5jbi9hcGkucGhwL3YxLnZvZD93ZD17U2VhcmNoV29yZH0=",
+	"matchSource":"anySource",
 	"configName":"苹果(推荐)",
+	"encrypted":true
+},
+{
+	"extensions":"undetermined",
+	"configType":"MacCMS",
+	"searchUrl":"aHR0cDovL3p5LnlpbGFucy5uZXQ6ODA5MC9hcGkucGhwL3Byb3ZpZGUvdm9kLz9hYz1kZXRhaWwmd2Q9e1NlYXJjaFdvcmR9",
+	"matchSource":"anySource",
+	"realUrl":"aHR0cDovLzEwNi41NS4yMzQuOTE6NDQzMy8/dXJsPXtJdGVtVXJsT3JJZH0=",
+	"realUrlRegex":"InVybCI6XHM/IiguKj8pIg==",
+	"realExtensionsRegex":"InR5cGUiOlxzPyIoLio/KSIs",
+	"configName":"喵派对",
+	"encrypted":true
+},
+{
+	"extensions":"undetermined",
+	"configType":"MacCMS",
+	"searchUrl":"aHR0cDovL3d3dy54aWFveW91Ni50ay9hcGkucGhwL3Byb3ZpZGUvdm9kLz9hYz12aWRlb2xpc3Qmd2Q9e1NlYXJjaFdvcmR9",
+	"matchSource":"anySource",
+	"realUrl":"aHR0cHM6Ly96YS5rdWFuanYuY29tLz91cmw9e0l0ZW1VcmxPcklkfQ==",
+	"realUrlRegex":"InVybCI6XHM/IiguKj8pIg==",
+	"realExtensionsRegex":"InR5cGUiOlxzPyIoLio/KSIs",
+	"configName":"小友(秒)",
+	"encrypted":true
+},
+{
+	"extensions":"m3u8",
+	"configType":"WebPage",
+	"searchUrl":"aHR0cHM6Ly93d3cudGVnb3V5cy5jb20veGdhcHAucGhwL3YyL3NlYXJjaD9wZz0xJnRleHQ9e1NlYXJjaFdvcmR9JnRva2VuPSZjc3JmPQ==",
+	"searchNameRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9uYW1lIjoiKC4qPykiLCk=",
+	"searchUrlRegex":"InZvZF9pZCI6KC4qPyks",
+	"searchPictureRegex":"InZvZF9waWMiOiIoLio/KSIs",
+	"searchStateRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9yZW1hcmtzIjoiKC4qPykiLCk=",
+	"itemUrl":"aHR0cHM6Ly93d3cudGVnb3V5cy5jb20veGdhcHAucGhwL3YyL3ZpZGVvX2RldGFpbD9pZD17U2VhcmNoVXJsT3JJZH0mY2s9",
+	"itemRangeRegex":"InZvZF91cmxfd2l0aF9wbGF5ZXIiOlxbKFtcd1xXXSo/KVxd",
+	"itemRangeSplit":"\\},\\{",
+	"itemRangeSplitPick":"wuduzy@tkqp@qq@iqiyi@wuduby",
+	"itemNameRegex":"VW5pY29kZS5kZWNvZGUoKFteIl0qPylcJC4qP1sjIl17MX0p",
+	"itemUrlRegex":"W14iXSo/XCQoLio/KVsjIl17MX0=",
+	"realUrl":"aHR0cHM6Ly9jYWNoZS50ZWdvdXlzLmNvbS9kd3NtLnBocD91cmw9e0l0ZW1VcmxPcklkfT9IZWFkZXI9eyJVc2VyLUFnZW50IjoiTW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDEyOyBWMjEzNkEgQnVpbGQvU1AxQS4yMTA4MTIuMDAzOyB3dikgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgVmVyc2lvbi80LjAgQ2hyb21lLzkxLjAuNDQ3Mi4xMTQgTW9iaWxlIFNhZmFyaS81MzcuMzYifQ==",
+	"realUrlRegex":"YWxpenl3XCgiKC4qPykiXCk7",
+	"configName":"tg(推荐)",
+	"encrypted":true
+},
+{
+	"extensions":"undetermined",
+	"configType":"MacCMS",
+	"searchUrl":"aHR0cDovLzEwNi4xMy4xOTkuODc6NDQzMy9hcGkucGhwL3Byb3ZpZGUvdm9kLz9hYz1kZXRhaWwmd2Q9e1NlYXJjaFdvcmR9",
+	"matchSource":"anySource",
+	"realUrl":"aHR0cHM6Ly93d3cubmZqeC54eXovcGxheWVyLz91cmw9e0l0ZW1VcmxPcklkfQ==",
+	"realUrlRegex":"InVybCI6IiguKj8pIiw=",
+	"configName":"蓝光",
+	"encrypted":true
+},
+{
+	"extensions":"unknown",
+	"configType":"WebPage",
+	"searchUrl":"aHR0cHM6Ly93d3cuaWthbjIzNC5jb20vc2VhcmNoLy0tLS0tLS0tLS0tLS0uaHRtbD93ZD17U2VhcmNoV29yZH0=",
+	"searchNameRegex":"bGF6eWxvYWQiIGhyZWY9Ii4qIiB0aXRsZT0iKC4qPyki",
+	"searchUrlRegex":"bGF6eWxvYWQiIGhyZWY9IiguKj8pIiB0aXRsZT0iLioi",
+	"searchPictureRegex":"ZGF0YS1vcmlnaW5hbD0iKC4qPyki",
+	"searchTypeRegex":"57G75Z6L77yaPC9zcGFuPiguKj8pPHNwYW4gY2xhc3M9InNwbGl0LWxpbmUiPg==",
+	"searchYearRegex":"5bm05Lu977yaPC9zcGFuPiguKj8pPC9zcGFuPg==",
+	"searchStateRegex":"PHNwYW4gY2xhc3M9InBpYy10ZXh0IHRleHQtcmlnaHQiPiguKj8pPC9zcGFuPg==",
+	"itemRangeRegex":"PHVsIGNsYXNzPSJzdHVpLWNvbnRlbnRfX3BsYXlsaXN0IGNsZWFyZml4Ij4oW1x3XFddKj8pPC91bD4=",
+	"itemNameRegex":"PGxpPjxhIGhyZWY9Ii9wbGF5L1xkKi1cZCotXGQqXC5odG1sIj4oLio/KTwvYT48L2xpPg==",
+	"itemUrlRegex":"PGxpPjxhIGhyZWY9IigvcGxheS9cZCotXGQqLVxkKlwuaHRtbCkiPi4qPC9hPjwvbGk+",
+	"configName":"ikan",
 	"encrypted":true
 }
 
@@ -298,17 +411,6 @@
   },
 
   "televisionList": [
-    {
-      "uiType" : "NotEPG",
-      "tvName" : "咪咕视频-NBA直播",
-      "tvList" : [
-        {
-          "sniff": true,
-          "tvUrlTips" : "HD" ,
-          "tvUrl" : "http://39.134.65.162/PLTV/88888888/224/3221225611/index.m3u8"
-        }
-      ]
-    },
     {
       "uiType" : "NotEPG",
       "tvName" : "罗翔刑法",
