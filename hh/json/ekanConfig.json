@@ -24,11 +24,19 @@
   "MjIuMDQuMDI=":"MjM0NTIxMDc=",
   "MjIuMDQuMDM=":"MjM0NTIxMDY=",
   "MjIuMDQuMjA=":"MjQ3MDIyMjk=",
+  "MjIuMDUuMTE=":"MjIuMDUuMTE=",
+  "MjIuMDUuMTFB":"MjMxMzcxNTE=",
+  "MjIuMDUuMTI=":"MjMxNDUzNDA=",
+  "MjMxNDUzNDE=":"Mjc4MDMyMzI=",
+  "MjIuMDcuMzA=":"MjU2MzMyODA=",
+  "MjIuMDcuMzE=":"Mjc4MDMyMjM=",
+  "MjIuMDguMjI=":"MjcyMTcyNjc=",
+  "MjcyMTcyNzc=":"",
   "notice": {
     "title" : "公告",
     "version" : "2022.08.23",
     "info" : "憨憨影视完全免费且无服务器，不存储任何视频，软件内容均来自互联网，<font color=#FF0000>软件制作目的是为了测试网络是否通畅</font>，测试完毕请自行于24小时内卸载删除！<br><br>更新部分视频源 08.23<br><br>by:隔壁刘所长",
-    "time": 3000,
+    "time": 0000,
     "visible" : true
 
   },
@@ -51,7 +59,7 @@
    
   ], 
   "subscribeManager": {
-    "update": "22.06.14",
+    "update": "22.08.23",
     "push": [
 {
         "name": "隔壁刘所长",
