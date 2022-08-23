@@ -5,7 +5,7 @@
   "contact": "隔壁刘所长",
   "message": "请在使用24小时内删除此订阅！",
   "version5Link": "",
-   "editable": false,
+  "editable": true,
 
 
   "searchConfig": [
@@ -14,24 +14,134 @@
       "configType": "Kuyun77",
       "searchUrl": "https://www.58wk.com"
     },
-{
-	"extensions":"m3u8",
+    {
 	"configType":"WebPage",
-	"searchUrl":"aHR0cHM6Ly93d3cudGVnb3V5cy5jb20veGdhcHAucGhwL3YyL3NlYXJjaD9wZz0xJnRleHQ9e1NlYXJjaFdvcmR9JnRva2VuPSZjc3JmPQ==",
-	"searchNameRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9uYW1lIjoiKC4qPykiLCk=",
-	"searchUrlRegex":"InZvZF9pZCI6KC4qPyks",
-	"searchPictureRegex":"InZvZF9waWMiOiIoLio/KSIs",
-	"searchStateRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9yZW1hcmtzIjoiKC4qPykiLCk=",
-	"itemUrl":"aHR0cHM6Ly93d3cudGVnb3V5cy5jb20veGdhcHAucGhwL3YyL3ZpZGVvX2RldGFpbD9pZD17U2VhcmNoVXJsT3JJZH0mY2s9",
-	"itemRangeRegex":"InZvZF91cmxfd2l0aF9wbGF5ZXIiOlxbKFtcd1xXXSo/KVxd",
-	"itemRangeSplit":"\\},\\{",
-	"itemRangeSplitPick":"wuduzy@tkqp@qq@iqiyi@wuduby",
-	"itemNameRegex":"VW5pY29kZS5kZWNvZGUoKFteIl0qPylcJC4qP1sjIl17MX0p",
-	"itemUrlRegex":"W14iXSo/XCQoLio/KVsjIl17MX0=",
-	"realUrl":"aHR0cHM6Ly9jYWNoZS50ZWdvdXlzLmNvbS9kd3NtLnBocD91cmw9e0l0ZW1VcmxPcklkfT9IZWFkZXI9eyJVc2VyLUFnZW50IjoiTW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDEyOyBWMjEzNkEgQnVpbGQvU1AxQS4yMTA4MTIuMDAzOyB3dikgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgVmVyc2lvbi80LjAgQ2hyb21lLzkxLjAuNDQ3Mi4xMTQgTW9iaWxlIFNhZmFyaS81MzcuMzYifQ==",
-	"realUrlRegex":"YWxpenl3XCgiKC4qPykiXCk7",
-	"configName":"555电影(推荐)",
+	"extensions":"unknown",
+	"searchUrl":"http://app.daishu.one/qingdoujiekou.php/v1.vod?wd={SearchWord}",
+	"searchNameRegex":"Unicode.decode(\"vod_name\":\"(.*?)\")",
+	"searchUrlRegex":"\"vod_id\":(.*?),\"",
+	"searchPictureRegex":"\"vod_pic\":\\s?\"(.*?)\"",
+	"searchTypeRegex":"Unicode.decode(\"type_id\":.*?,\"type_name\":\"(.*?)\")",
+	"itemUrl":"http://app.daishu.one/qingdoujiekou.php/v1.vod/detail?vod_id={SearchUrlOrId}",
+	"itemRangeRegex":"\"vod_play_list\":\\[([\\w\\W]*?)\\]",
+	"itemRangeSplit":"\\{,\\}\\]",
+	"itemRangeSplitPick":"wuduzy",
+	"itemApiRegex":"String.replace[..@.](Html.decode(\"parse2\":\\s?\"\\s?(.*?)[,\"]{1}.*,))",
+	"itemNameRegex":"Unicode.decode(([^\"]*?)\\$.*?[#\"]{1})",
+	"itemUrlRegex":"String.replaceAll[\\\\/@/]([^\"]*?\\$(.*?)[#\"]{1})",
+	"realUrl":"{ItemApi}{ItemUrlOrId}",
+	"configName":"地鼠"
+},
+    {
+      "configName": "快云y",
+      "configType": "WebPage",
+      "searchUrl": "https://www.kuaiyunyy.com/index.php/vod/search.html?wd={SearchWord}",
+      "searchNameRegex": "<h3><a href=\".*?\" title=\"(.*?)\">.*?</a></h3>",
+      "searchUrlRegex": "<h3><a href=\"(.*?)\" title=\".*?\">.*?</a></h3>",
+      "searchTypeRegex": "<a href=\".*?\" title=\"(.*?)\" class=\"tag-link\">",
+      "searchYearRegex": "<a href=\"/index.php/vod/search/year/\\d*.html\" target=\"_blank\">(\\d*?)</a>",
+      "searchPictureRegex": "<img class=\"lazy lazyload\" data-src=\"(.*?)\" src",
+      "searchStateRegex": "<a class=\"video-serial\" href=\".*?\" title=\".*?\">(.*?)</a>",
+      "itemRangeRegex": "<div class=\"module-blocklist\">[\\w\\W]*?</div>",
+      "itemNameRegex": "<a href=\"/index.php/vod/play/id/\\d*/sid/\\d*/nid/\\d*.html\" title=\".*?\"><span>(.*?)</span></a>",
+      "itemUrlRegex": "<a href=\"(/index.php/vod/play/id/\\d*/sid/\\d*/nid/\\d*.html)\" title=\".*?\"><span>.*?</span></a>"
+    },
+    {
+	"configType":"WebPage",
+	"extensions":"undetermined",
+	"searchUrl":"https://ky.kuanjv.com/mogai_api.php/v1.vod?wd={SearchWord}",
+	"searchNameRegex":"Unicode.decode(\"vod_name\":\"(.*?)\")",
+	"searchUrlRegex":"\"vod_id\":\"(.*?)\",\"",
+	"searchPictureRegex":"\"vod_pic\":\"(.*?)\"",
+	"searchTypeRegex":"Unicode.decode(\"type_id\":.*?,\"type_name\":\"(.*?)\")",
+	"itemUrl":"https://ky.kuanjv.com/mogai_api.php/v1.vod/detail?vod_id={SearchUrlOrId}",
+	"itemRangeRegex":"\"vod_play_list\":\\[([\\w\\W]*?)\\}\\]\\},\\{",
+	"itemApiRegex":"String.replace[..@.](String.replace[](\"parse2\":\\s?\"\\s?(.*?)[,\"]{1}.*,))",
+	"itemNameRegex":"Unicode.decode(\"name\":\"(.*?)\",)",
+	"itemUrlRegex":"Unicode.decode(\"url\":\"(.*?)\")",
+	"realTrigger":"notContains[]",
+	"realUrl":"{ItemApi}{ItemUrlOrId}",
+	"realUrlRegex":"\"url\":\\s?\"(.*?)\"",
+	"realExtensionsRegex":"\"type\":\\s?\"(.*?)\",",
+	"configName":"快云"
+},
+    {
+	"extensions":"m3u8",
+	"configType":"MacCMS",
+	"jsonArray":"data@list",
+	"searchUrl":"aHR0cDovL3R2Y21zLmlrYW42LnZpcC9hcGkucGhwL2djdHZhcGkudm9kP3BhZ2U9MCZsaW1pdD0zJndkPXtTZWFyY2hXb3JkfQ==",
+	"matchSource":"anySource",
+	"realUrl":"aHR0cDovL3R2Y21zLmlrYW42LnZpcC9hcGkucGhwL2djdHZhcGkuYXBpL0luZGV4P3VybD17SXRlbVVybE9ySWR9JnR5cGU9bGVrYW56eXc=",
+	"realUrlRegex":"QmFzZTY0LmRlY29kZSgiZGF0YSI6IiguKj8pIik=",
+	"configName":"乐看(推荐)",
 	"encrypted":true
+},
+ {
+	"extensions":"undetermined",
+	"configType":"MacCMS",
+	"searchUrl":"aHR0cHM6Ly9kYnp5LmNjL2FwaS5waHAvcHJvdmlkZS92b2QvZnJvbS9yZW5yZW5taT9hYz12aWRlb2xpc3Qmd2Q9e1NlYXJjaFdvcmR9",
+	"matchSource":"anySource",
+	"realUrl":"aHR0cDovLzgxLjcxLjQ4LjI0OTo0NDU2L2pzb25jL3J4LnBocD91cmw9e0l0ZW1VcmxPcklkfQ==",
+	"realUrlRegex":"InVybCI6XHM/IiguKj8pIiw=",
+	"configName":"人人迷(推荐)",
+	"encrypted":true
+},
+{
+	"extensions":"undetermined",
+	"configType":"MacCMS",
+	"searchUrl":"aHR0cHM6Ly9hLjdkeXUuY24vYXBpLnBocC9wcm92aWRlL3ZvZC8/YWM9dmlkZW9saXN0JndkPXtTZWFyY2hXb3JkfQ==",
+	"matchSource":"Good",
+	"realUrl":"aHR0cHM6Ly9nb29kLmppYW5neHMudmlwL2hvbWUvYXBpP3R5cGU9eXMmdWlkPTYwNTU4MzMma2V5PWFmZ2pzdUNERkdITVNUWFo1NiZ1cmw9e0l0ZW1VcmxPcklkfQ==",
+	"realUrlRegex":"InVybCI6XHM/IiguKj8pIiw=",
+	"realExtensionsRegex":"InR5cGUiOlxzPyIoLio/KSIs",
+	"configName":"Good(推荐)",
+	"encrypted":true
+},
+{
+	"extensions":"unknown",
+	"configType":"WebPage",
+	"searchUrl":"https://czspp.com/xssearch?q={SearchWordNoEncryption}",
+	"searchNameRegex":"<a target=\"_blank\" href=\"https://czspp.com/movie/\\d*\\.html\">(.*?)</a>",
+	"searchUrlRegex":"<a target=\"_blank\" href=\"(https://czspp.com/movie/\\d*\\.html)\">.*</a>",
+	"searchPictureRegex":"data-original=\"(.*?)\"",
+	"searchTypeRegex":"<p class=\"nostag\" style=\"display: none;\">(.*?)</p>",
+	"searchStateRegex":"<span>(.*?)</span>",
+	"itemNameRegex":"<a href=\"https://czspp.com/v_play/.*.html\">(.*?)</a>",
+	"itemUrlRegex":"<a href=\"(https://czspp.com/v_play/.*.html)\">.*</a>",
+	"configName":"厂长(推荐)"
+},
+{
+	"configType":"WebPage",
+	"extensions":"undetermined",
+	"searchUrl":"http://ld.zgodr.com:8090/kumiao_api.php/v1.vod?wd={SearchWord}",
+	"searchNameRegex":"Unicode.decode(\"vod_name\":\"(.*?)\")",
+	"searchUrlRegex":"\"vod_id\":(.*?),\"",
+	"searchPictureRegex":"\"vod_pic\":\"(.*?)\"",
+	"searchTypeRegex":"Unicode.decode(\"type_id\":.*?,\"type_name\":\"(.*?)\")",
+	"itemUrl":"http://ld.zgodr.com:8090/kumiao_api.php/v1.vod/detail?vod_id={SearchUrlOrId}",
+	"itemRangeRegex":"\"vod_play_list\":\\[([\\w\\W]*?)\\]",
+	"itemRangeSplit":"\\{,\\}\\]",
+	"itemRangeSplitPick":"wuduzy",
+	"itemApiRegex":"String.replace[..@.](Html.decode(\"parse2\":\\s?\"\\s?(.*?)[,\"]{1}.*,))",
+	"itemNameRegex":"Unicode.decode(([^\"]*?)\\$.*?[#\"]{1})",
+	"itemUrlRegex":"String.replaceAll[\\\\/@/]([^\"]*?\\$(.*?)[#\"]{1})",
+	"realUrl":"{ItemApi}{ItemUrlOrId}",
+	"realUrlRegex":"\"url\":\\s?\"(.*?)\"",
+	"realExtensionsRegex":"\"type\":\\s?\"(.*?)\",",
+	"configName":"星空"
+},
+{
+	"extensions":"unknown",
+	"configType":"WebPage",
+	"searchUrl":"https://czspp.com/xssearch?q={SearchWordNoEncryption}",
+	"searchNameRegex":"<a target=\"_blank\" href=\"https://czspp.com/movie/\\d*\\.html\">(.*?)</a>",
+	"searchUrlRegex":"<a target=\"_blank\" href=\"(https://czspp.com/movie/\\d*\\.html)\">.*</a>",
+	"searchPictureRegex":"data-original=\"(.*?)\"",
+	"searchTypeRegex":"<p class=\"nostag\" style=\"display: none;\">(.*?)</p>",
+	"searchStateRegex":"<div class=\"jidi\">\n       <span>(.*?)</span>",
+	"itemNameRegex":"<a href=\"https://czspp.com/v_play/.*.html\">(.*?)</a>",
+	"itemUrlRegex":"<a href=\"(https://czspp.com/v_play/.*.html)\">.*</a>",
+	"configName":"厂长"
 },
 {
 	"configType":"WebPage",
@@ -45,9 +155,9 @@
 	"itemRangeRegex":"\"vod_play_list\":\\[([\\w\\W]*?)\\]",
 	"itemRangeSplit":"\\{,\\}\\]",
 	"itemRangeSplitPick":"wuduzy",
-	"itemApiRegex":"String.replace[..,.](Html.decode(\"parse2\":\\s?\"\\s?(.*?)[,\"]{1}.*,))",
+	"itemApiRegex":"String.replace[..@.](Html.decode(\"parse2\":\\s?\"\\s?(.*?)[,\"]{1}.*,))",
 	"itemNameRegex":"Unicode.decode(([^\"]*?)\\$.*?[#\"]{1})",
-	"itemUrlRegex":"String.replaceAll[\\\\/,/]([^\"]*?\\$(.*?)[#\"]{1})",
+	"itemUrlRegex":"String.replaceAll[\\\\/@/]([^\"]*?\\$(.*?)[#\"]{1})",
 	"realUrl":"{ItemApi}{ItemUrlOrId}",
 	"realUrlRegex":"\"url\":\\s?\"(.*?)\"",
 	"realExtensionsRegex":"\"type\":\\s?\"(.*?)\",",
@@ -65,21 +175,26 @@
       "configName":"盒子"
     },
     {
+	"configName":"大米",
 	"configType":"WebPage",
-	"sniffExcludeRegex":"aHR0cHM6Ly95c2djLnRqb21ldC5jb20vLiouanBn",
-	"searchUrl":"aHR0cHM6Ly95c2djLmNjL2luZGV4LnBocC9hamF4L3N1Z2dlc3Q/bWlkPTEmd2Q9e1NlYXJjaFdvcmR9",
-	"searchNameRegex":"bmFtZSI6IiguKj8pIiwi",
-	"searchUrlRegex":"aWQiOiguKj8pLCI=",
-	"realUrl":"e0l0ZW1VcmxPcklkfSZIZWFkZXI9eyJVc2VyLUFnZW50IjoiTW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDcuMS4xOyBNSSA1KSJ9",
-	"realUrlRegex":"InVybCI6XHM/IiguKj8pIiwidXJs",
 	"extensions":"unknown",
-	"finalUrl":"aHR0cHM6Ly95c2djLnRqb21ldC5jb20vP3VybD17UmVhbFVybE9ySWR9",
-	"searchPictureRegex":"U3RyaW5nLnJlcGxhY2VBbGxbXFwvLC9dKCJwaWMiOiIoLio/KSIp",
-	"itemUrl":"aHR0cHM6Ly95c2djLmNjL3ZvZGRldGFpbC97U2VhcmNoVXJsT3JJZH0uaHRtbA==",
-	"itemRangeRegex":"PHVsIGNsYXNzPSJteXVpLWNvbnRlbnRfX2xpc3Qgc2Nyb2xsYmFyIHNvcnQtbGlzdCBjbGVhcmZpeCIgc3R5bGU9Im1heC1oZWlnaHQ6IDMwMHB4OyBvdmVyZmxvdzogYXV0bzsiPihbXHdcV10qPyk8L3VsPg==",
-	"itemNameRegex":"PGEgY2xhc3M9ImJ0biBidG4tZGVmYXVsdCIgaHJlZj0iL3ZvZHBsYXkvLiotLiotLiouaHRtbCI+KC4qPyk8L2E+PC9saT4=",
-	"itemUrlRegex":"PGEgY2xhc3M9ImJ0biBidG4tZGVmYXVsdCIgaHJlZj0iKC92b2RwbGF5Ly4qLS4qLS4qLmh0bWwpIj4uKjwvYT48L2xpPg==",
-	"configName":"工厂",
+	"itemUrl":"https://www.dmxq.cc/voddetail/{SearchUrlOrId}.html",
+	"itemNameRegex":"<a class=\"module-play-list-link\" href=\".*\" title=\".*\"><span>(.*)</span></a>",
+	"itemRangeRegex":"<div class=\"module-play-list-content module-play-list-base\">([\\w\\W]*?)</div>",
+	"itemUrlRegex":"<a class=\"module-play-list-link\" href=\"(.*)\" title=\".*\"><span>.*</span></a>",
+	"searchNameRegex":"\"id\":.*?,\"name\":\"(.*?)\",\"en\":\".*?\",\"pic\":\".*?\"",
+	"searchPictureRegex":"String.replaceAll[\\\\/,/](\"id\":.*?,\"name\":\".*?\",\"en\":\".*?\",\"pic\":\"(.*?url=)?(.*?)\")",
+	"searchUrl":"https://www.dmxq.cc/index.php/ajax/suggest?mid=1&wd={SearchWord}",
+	"searchUrlRegex":"\"id\":(.*?),\"name\":\".*?\",\"en\":\".*?\",\"pic\":\".*?\"",
+	"usable":true
+},
+
+{
+	"extensions":"undetermined",
+	"configType":"MacCMS",
+	"searchUrl":"aHR0cHM6Ly93d3cuZGR6eXoxLmNvbS9hcGkucGhwL3Byb3ZpZGUvdm9kLz9hYz12aWRlb2xpc3Qmd2Q9e1NlYXJjaFdvcmR9P0hlYWRlcj17IlVzZXItQWdlbnQiOiJ7V2ViVmlld1VzZXJBZ2VudH0ifQ==",
+	"matchSource":"anySource",
+	"configName":"久久",
 	"encrypted":true
 },
     {
@@ -113,86 +228,9 @@
 	"configName":"草莓",
 	"encrypted":true
 },
-{
-	"configType":"WebPage",
-	"extensions":"undetermined",
-	"searchUrl":"https://300ys.xyz/mogai_api.php/v1.vod?wd={SearchWord}",
-	"searchNameRegex":"Unicode.decode(\"vod_name\":\"(.*?)\")",
-	"searchUrlRegex":"\"vod_id\":(.*?),\"",
-	"searchPictureRegex":"\"vod_pic\":\"(.*?)\"",
-	"searchTypeRegex":"Unicode.decode(\"type_id\":.*?,\"type_name\":\"(.*?)\")",
-	"itemUrl":"https://300ys.xyz/mogai_api.php/v1.vod/detail?vod_id={SearchUrlOrId}",
-	"itemRangeRegex":"\"vod_play_list\":\\[([\\w\\W]*?)\\]",
-	"itemRangeSplit":"\\{,\\}\\]",
-	"itemRangeSplitPick":"wuduzy",
-	"itemNameRegex":"Unicode.decode(([^\"]*?)\\$.*?[#\"]{1})",
-	"itemUrlRegex":"String.replace[\\\\/,/]([^\"]*?\\$(.*?)[#\"]{1})",
-	"realTrigger":"contains[.html]",
-	"realUrl":"POST:https://api.baibaipei.com/video.php?PostBody={\"url\":\"{ItemUrlOrId}\"}",
-	"realUrlRegex":"\"url\":\\s?\"(http.*?)\"",
-	"realExtensionsRegex":"\"type\":\\s?\"(.*?)\",",
-	"configName":"世界"
-},
-{
-	"extensions":"unknown",
-	"configType":"WebPage",
-	"searchUrl":"aHR0cHM6Ly93d3cuamlueGlhb3NodS50b3AvemhlbmJ1a2EucGhwP2FjdGlvbj1zZWFyY2gmcXVlcnk9e1NlYXJjaFdvcmR9",
-	"searchNameRegex":"Im5hbWUiOiIoLio/KSIs",
-	"searchUrlRegex":"ImlkIjoiKC4qPykiLA==",
-	"searchPictureRegex":"ImltZyI6IiguKj8pIg==",
-	"itemUrl":"aHR0cHM6Ly93d3cuemhlbmJ1a2E1LmNvbS92b2RkZXRhaWwve1NlYXJjaFVybE9ySWR9Lw==",
-	"itemRangeRegex":"PHVsIGNsYXNzPSJzdHVpLWNvbnRlbnRfX3BsYXlsaXN0IGNsZWFyZml4Ij4oW1x3XFddKj8pPC91bD4=",
-	"realUrl":"aHR0cHM6Ly93d3cuemhlbmJ1a2E1LmNvbXtJdGVtVXJsT3JJZH0=",
-	"itemNameRegex":"PGxpPjxhIGhyZWY9Ii92b2RwbGF5L1xkKi1cZCotXGQqLyI+KC4qPyk8L2E+PC9saT4=",
-	"itemUrlRegex":"PGxpPjxhIGhyZWY9Iigvdm9kcGxheS9cZCotXGQqLVxkKi8pIj4uKjwvYT48L2xpPg==",
-	"configName":"真不卡",
-	"encrypted":true
-},
-{
-	"configType":"WebPage",
-	"extensions":"undetermined",
-	"searchUrl":"aHR0cDovL2J1a2FpdmlwMi5jb20vaW5kZXgucGhwL3Jzcy54bWw/d2Q9e1NlYXJjaFdvcmR9JkhlYWRlcj17IlVzZXItQWdlbnQiOiJ7V2ViVmlld1VzZXJBZ2VudH0ifQ==",
-	"searchNameRegex":"PGl0ZW0+IAogICA8dGl0bGU+KC4qKSAuKjwvdGl0bGU+IAogICA8bGluaz4uKiAKICAgPGF1dGhvcj4=",
-	"searchUrlRegex":"PGl0ZW0+IAogICA8dGl0bGU+LiogLio8L3RpdGxlPiAKICAgPGxpbms+KC4qKSAKICAgPGF1dGhvcj4=",
-	"itemUrl":"e1NlYXJjaFVybE9ySWR9JkhlYWRlcj17IlVzZXItQWdlbnQiOiJ7V2ViVmlld1VzZXJBZ2VudH0ifQ==",
-	"itemRangeRegex":"PHVsIGNsYXNzPSJzdHVpLWNvbnRlbnRfX3BsYXlsaXN0IGNsZWFyZml4Ij4oW1x3XFddKj8pPC91bD4=",
-	"itemNameRegex":"PGxpPjxhIGhyZWY9Ii9pbmRleC5waHAvdm9kL3BsYXkvaWQvXGQqL3NpZC8xL25pZC9cZCpcLmh0bWwiPiguKik8L2E+PC9saT4=",
-	"itemUrlRegex":"PGxpPjxhIGhyZWY9IigvaW5kZXgucGhwL3ZvZC9wbGF5L2lkL1xkKi9zaWQvMS9uaWQvXGQqXC5odG1sKSI+Lio8L2E+PC9saT4=",
-	"realUrl":"e0l0ZW1VcmxPcklkfSZIZWFkZXI9eyJVc2VyLUFnZW50Ijoie1dlYlZpZXdVc2VyQWdlbnR9In0=",
-	"realUrlRegex":"InVybCI6IiguKj8pIiwidXJs",
-	"finalUrl":"aHR0cHM6Ly9nb29kLXZpcC5tbWl5dWUuY29tL19kZWZhdWx0L2hscy9uZXcve1JlYWxVcmxPcklkfS5tM3U4JkhlYWRlcj17IlVzZXItQWdlbnQiOiJ7V2ViVmlld1VzZXJBZ2VudH0ifQ==",
-	"configName":"BK",
-	"encrypted":true
-},
-{
-	"configType":"WebPage",
-	"extensions":"undetermined",
-	"searchUrl":"http://yinliub.cn/lvdou_api.php/v1.vod?wd={SearchWord}",
-	"searchNameRegex":"Unicode.decode(\"vod_name\":\"(.*?)\")",
-	"searchUrlRegex":"\"vod_id\":(.*?),\"",
-	"searchPictureRegex":"\"vod_pic\":\"(.*?)\"",
-	"searchTypeRegex":"Unicode.decode(\"type_id\":.*?,\"type_name\":\"(.*?)\")",
-	"itemUrl":"http://yinliub.cn/lvdou_api.php/v1.vod/detail?vod_id={SearchUrlOrId}",
-	"itemRangeRegex":"\"vod_play_list\":\\[([\\w\\W]*?)\\]",
-	"itemRangeSplit":"\\{,\\}\\]",
-	"itemRangeSplitPick":"wuduzy",
-	"itemApiRegex":"String.replace[..,.](Html.decode(\"parse2\":\\s?\"(.*?)[,\"]{1}.*,))",
-	"itemNameRegex":"Unicode.decode(([^\"]*?)\\$.*?[#\"]{1})",
-	"itemUrlRegex":"String.replaceAll[\\\\/,/](Unicode.decode([^\"]*?\\$(.*?)[#\"]{1}))",
-	"realTrigger":"notContains[.m3u8]",
-	"realUrl":"{ItemApi}{ItemUrlOrId}",
-	"realUrlRegex":"\"url\":\\s?\"(.*?)\",",
-	"realExtensionsRegex":"\"type\":\\s?\"(.*?)\",",
-	"configName":"上午"
-},
-{
-	"configName":"七七",
-	"extensions":"m3u8",
-	"configType":"MacCMS",
-	"jsonArray":"data@list",
-	"searchUrl":"http://35ys.cc/api.php/v1.vod?wd={SearchWord}",
-	"matchSource":"ziqie"
-},
+
+
+
 {
 	"extensions":"unknown",
 	"configType":"WebPage",
@@ -207,16 +245,7 @@
 	"configName":"光源",
 	"encrypted":true
 },
- {
-    "configName": "炸鸡",
-    "configType": "MacCMS",
-    "extensions": "m3u8",
-    "jsonArray": "data@list",
-    "matchSource": "CL4K",
-    "realUrl": "http://jx.yjhan.com:8090/home/api?type=ys&uid=104819&key=aejklmvwJKMQRS2348&url={ItemUrlOrId}",
-    "realUrlRegex": "\"url\":\\s?\"(.*?)\"",
-    "searchUrl": "https://shangjihuoke.com/api.php/v1.vod?wd={SearchWord}"
- },
+
 {
 	"extensions":"unknown",
 	"configType":"WebPage",
@@ -232,83 +261,14 @@
 },
 
 {
-	"extensions":"m3u8",
-	"configType":"WebPage",
-	"searchUrl":"aHR0cHM6Ly92LnBpcGl0dS50b3AveGdhcHAucGhwL3YyL3NlYXJjaD9wZz0xJnRleHQ9e1NlYXJjaFdvcmR9",
-	"searchNameRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9uYW1lIjoiKC4qPykiLCk=",
-	"searchUrlRegex":"InZvZF9pZCI6KC4qPyks",
-	"searchPictureRegex":"InZvZF9waWMiOiIoLio/KSIs",
-	"searchStateRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9yZW1hcmtzIjoiKC4qPykiLCk=",
-	"itemUrl":"aHR0cHM6Ly92LnBpcGl0dS50b3AveGdhcHAucGhwL3YyL3ZpZGVvX2RldGFpbD9pZD17U2VhcmNoVXJsT3JJZH0=",
-	"itemRangeRegex":"InZvZF91cmxfd2l0aF9wbGF5ZXIiOlxbKFtcd1xXXSo/KVxd",
-	"itemRangeSplit":"\\},\\{",
-	"itemRangeSplitPick":"duoduozy",
-	"itemNameRegex":"VW5pY29kZS5kZWNvZGUoKFteIl0qPylcJC4qP1sjIl17MX0p",
-	"itemUrlRegex":"W14iXSo/XCQoLio/KVsjIl17MX0=",
-	"realUrl":"aHR0cDovL2EuZHh6ajg4LmNvbS9qeDE1OS8xMjM1Ni5waHA/dXJsPXtJdGVtVXJsT3JJZH0=",
+	"extensions":"undetermined",
+	"configType":"MacCMS",
+	"searchUrl":"aHR0cDovL3ZpcG12LmNjL2FwaS5waHAvcHJvdmlkZS92b2Q/YWM9dmlkZW9saXN0JndkPXtTZWFyY2hXb3JkfQ==",
+	"matchSource":"anySource",
+	"realUrl":"aHR0cHM6Ly9hcHAuZmpra2suY24vdG91amlleGlzaS5waHA/dXJsPXtJdGVtVXJsT3JJZH0=",
 	"realUrlRegex":"InVybCI6XHM/IiguKj8pIiw=",
 	"realExtensionsRegex":"InR5cGUiOlxzPyIoLio/KSIs",
-	"configName":"多多",
-	"encrypted":true
-},
-{
-	"extensions":"m3u8",
-	"configType":"MacCMS",
-	"jsonArray":"data@list",
-	"searchUrl":"aHR0cDovL2FwcC5ncmVsaWdodGluZy5jbi9hcGkucGhwL3YxLnZvZD93ZD17U2VhcmNoV29yZH0=",
-	"matchSource":"anySource",
-	"configName":"苹果(推荐)",
-	"encrypted":true
-},
-{
-	"extensions":"undetermined",
-	"configType":"MacCMS",
-	"searchUrl":"aHR0cDovL3p5LnlpbGFucy5uZXQ6ODA5MC9hcGkucGhwL3Byb3ZpZGUvdm9kLz9hYz1kZXRhaWwmd2Q9e1NlYXJjaFdvcmR9",
-	"matchSource":"anySource",
-	"realUrl":"aHR0cDovLzEwNi41NS4yMzQuOTE6NDQzMy8/dXJsPXtJdGVtVXJsT3JJZH0=",
-	"realUrlRegex":"InVybCI6XHM/IiguKj8pIg==",
-	"realExtensionsRegex":"InR5cGUiOlxzPyIoLio/KSIs",
-	"configName":"喵派对",
-	"encrypted":true
-},
-{
-	"extensions":"undetermined",
-	"configType":"MacCMS",
-	"searchUrl":"aHR0cDovL3d3dy54aWFveW91Ni50ay9hcGkucGhwL3Byb3ZpZGUvdm9kLz9hYz12aWRlb2xpc3Qmd2Q9e1NlYXJjaFdvcmR9",
-	"matchSource":"anySource",
-	"realUrl":"aHR0cHM6Ly96YS5rdWFuanYuY29tLz91cmw9e0l0ZW1VcmxPcklkfQ==",
-	"realUrlRegex":"InVybCI6XHM/IiguKj8pIg==",
-	"realExtensionsRegex":"InR5cGUiOlxzPyIoLio/KSIs",
-	"configName":"小友(秒)",
-	"encrypted":true
-},
-{
-	"extensions":"m3u8",
-	"configType":"WebPage",
-	"searchUrl":"aHR0cHM6Ly93d3cudGVnb3V5cy5jb20veGdhcHAucGhwL3YyL3NlYXJjaD9wZz0xJnRleHQ9e1NlYXJjaFdvcmR9JnRva2VuPSZjc3JmPQ==",
-	"searchNameRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9uYW1lIjoiKC4qPykiLCk=",
-	"searchUrlRegex":"InZvZF9pZCI6KC4qPyks",
-	"searchPictureRegex":"InZvZF9waWMiOiIoLio/KSIs",
-	"searchStateRegex":"VW5pY29kZS5kZWNvZGUoInZvZF9yZW1hcmtzIjoiKC4qPykiLCk=",
-	"itemUrl":"aHR0cHM6Ly93d3cudGVnb3V5cy5jb20veGdhcHAucGhwL3YyL3ZpZGVvX2RldGFpbD9pZD17U2VhcmNoVXJsT3JJZH0mY2s9",
-	"itemRangeRegex":"InZvZF91cmxfd2l0aF9wbGF5ZXIiOlxbKFtcd1xXXSo/KVxd",
-	"itemRangeSplit":"\\},\\{",
-	"itemRangeSplitPick":"wuduzy@tkqp@qq@iqiyi@wuduby",
-	"itemNameRegex":"VW5pY29kZS5kZWNvZGUoKFteIl0qPylcJC4qP1sjIl17MX0p",
-	"itemUrlRegex":"W14iXSo/XCQoLio/KVsjIl17MX0=",
-	"realUrl":"aHR0cHM6Ly9jYWNoZS50ZWdvdXlzLmNvbS9kd3NtLnBocD91cmw9e0l0ZW1VcmxPcklkfT9IZWFkZXI9eyJVc2VyLUFnZW50IjoiTW96aWxsYS81LjAgKExpbnV4OyBBbmRyb2lkIDEyOyBWMjEzNkEgQnVpbGQvU1AxQS4yMTA4MTIuMDAzOyB3dikgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgVmVyc2lvbi80LjAgQ2hyb21lLzkxLjAuNDQ3Mi4xMTQgTW9iaWxlIFNhZmFyaS81MzcuMzYifQ==",
-	"realUrlRegex":"YWxpenl3XCgiKC4qPykiXCk7",
-	"configName":"tg(推荐)",
-	"encrypted":true
-},
-{
-	"extensions":"undetermined",
-	"configType":"MacCMS",
-	"searchUrl":"aHR0cDovLzEwNi4xMy4xOTkuODc6NDQzMy9hcGkucGhwL3Byb3ZpZGUvdm9kLz9hYz1kZXRhaWwmd2Q9e1NlYXJjaFdvcmR9",
-	"matchSource":"anySource",
-	"realUrl":"aHR0cHM6Ly93d3cubmZqeC54eXovcGxheWVyLz91cmw9e0l0ZW1VcmxPcklkfQ==",
-	"realUrlRegex":"InVybCI6IiguKj8pIiw=",
-	"configName":"蓝光",
+	"configName":"达人",
 	"encrypted":true
 },
 {
@@ -326,9 +286,51 @@
 	"itemUrlRegex":"PGxpPjxhIGhyZWY9IigvcGxheS9cZCotXGQqLVxkKlwuaHRtbCkiPi4qPC9hPjwvbGk+",
 	"configName":"ikan",
 	"encrypted":true
+},
+{
+	"extensions":"undetermined",
+	"configType":"MacCMS",
+	"searchUrl":"aHR0cDovL2VoLnR2enkuY2MvYXBpLnBocC9wcm92aWRlL3ZvZC8/YWM9ZGV0YWlsJndkPXtTZWFyY2hXb3JkfQ==",
+	"matchSource":"CL4K",
+	"realUrl":"aHR0cDovL2p4LnlqaGFuLmNvbTo4MDkwL2hvbWUvYXBpP3R5cGU9eXMmdWlkPTI0MzY2OSZrZXk9YWRucXJ0d3lGSkxPVzA0NDQ0JnVybD17SXRlbVVybE9ySWR9",
+	"realUrlRegex":"InVybCI6XHM/IiguKj8pIg==",
+	"configName":"CLK",
+	"encrypted":true
+},
+{
+	"extensions":"unknown",
+	"configType":"WebPage",
+	"searchUrl":"https://www.smdyy.cc/rss.xml?wd={SearchWord}",
+	"searchNameRegex":"<title>(.*?) .*</title> \n   <link>",
+	"searchUrlRegex":"<link>(.*?) \n   <author>",
+	"searchStateRegex":"<title>.* (.*?)</title> \n   <link>",
+	"itemRangeRegex":"<ul class=\"stui-content__playlist clearfix\">([\\w\\W]*?)</ul>",
+	"itemNameRegex":"<li><a href=\".*\">(.*?)</a></li>",
+	"itemUrlRegex":"<li><a href=\"(.*?)\">.*</a></li>",
+	"configName":"神马"
+},
+{
+	"extensions":"unknown",
+	"configType":"WebPage",
+	"searchUrl":"https://www.voflix.com/search/-------------.html?wd={SearchWord}",
+	"searchNameRegex":"<a href=\".*\"><strong>(.*?)</strong></a>",
+	"searchUrlRegex":"<a href=\"(.*?)\"><strong>.*</strong></a>",
+	"searchPictureRegex":"data-original=\"(.*?)\"",
+	"searchYearRegex":"<div class=\"module-info-item-content\">\n          (.*?) \n          <span",
+	"searchStateRegex":"<div class=\"module-item-note\">\n          (.*?)\n         </div>",
+	"itemRangeRegex":"<div class=\"module-play-list-content  module-play-list-base\">([\\w\\W]*?)</div>",
+	"itemNameRegex":"<a class=\"module-play-list-link\" href=.*\" title=\".*\"><span>(.*?)</span></a>",
+	"itemUrlRegex":"<a class=\"module-play-list-link\" href=\"(.*?)\" title=\".*\"><span>.*</span></a>",
+	"configName":"视界(推荐)"
+},
+{
+	"extensions":"undetermined",
+	"configType":"MacCMS",
+	"searchUrl":"aHR0cDovLzQzLjEzNS43NS4xODA6OTk5OS9hcGkucGhwL3Byb3ZpZGUvdm9kLz9hYz12aWRlb2xpc3Qmd2Q9e1NlYXJjaFdvcmR9",
+	"matchSource":"anySource",
+	"configName":"太阳(推荐)",
+	"encrypted":true
 }
-
-
 
 
 
@@ -392,11 +394,11 @@
       "support": ["iqiyi","qq","youku","mgtv","sohu","cctv","pptv","1905","miguvideo","ixigua"]
     },
     "蓝光3": {
-      "api": "https://jx.iztyy.com/svip/?url=",
+      "api": "http://43.128.41.138/?url=",
       "support": ["iqiyi","qq","youku","mgtv","sohu","bilibili","pptv","1905","miguvideo","ixigua"]
     },
     "蓝光4": {
-      "api": "https://jx.m3u8.tv/jiexi/?url=",
+      "api": "https://jx.iztyy.com/svip/?url=",
       "support": ["iqiyi","qq","youku","mgtv","sohu","pptv","1905","miguvideo","ixigua"]
     },
         "高清1": {
