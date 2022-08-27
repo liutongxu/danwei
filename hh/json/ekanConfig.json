@@ -3,7 +3,7 @@
     
   "update": {
     "title" : "更新",
-    "version" : "2022.08.28",
+    "version" : "2022.05.07",
     "info" : "修复了一些BUG<br>加快了启动速度<br><font color=#FF0000>安装后会出现两个app，请卸载老版本</font>",
     "url" : "https://tongxu.lanzout.com/i9TmI0aexw1g",
     "visible" : true,
